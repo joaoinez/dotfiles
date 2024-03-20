@@ -1,5 +1,6 @@
 # dotfiles
 
----
-
-How to run
+How to run:
+```sh
+chezmoi init --apply $GITHUB_USERNAME
+```
