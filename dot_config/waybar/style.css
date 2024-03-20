@@ -1,0 +1,106 @@
+@import "./themes/rose-pine.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: RobotoMonoNerdFont, Roboto, FontAwesome, Helvetica, Arial,
+    sans-serif;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @foam;
+}
+
+tooltip {
+  background: @overlay;
+  border: 1px solid @base;
+  border-radius: 5px;
+}
+
+tooltip label {
+  color: @text;
+}
+
+#clock {
+  background-color: @surface;
+  padding: 0.25em 1em;
+  margin: 0.5em 0;
+  margin-left: 1em;
+  border-radius: 4px;
+  color: @gold;
+}
+
+#workspaces {
+  background-color: @surface;
+  padding: 0.25em 0.5em;
+  margin: 0.5em 0;
+  margin-left: 0.5em;
+  border-radius: 4px;
+}
+
+#workspaces button {
+  padding: 0.25em 0.5em;
+  font-weight: bold;
+  border-radius: 4px;
+  color: @text;
+}
+
+#workspaces button.active {
+  color: @pine;
+}
+
+#tray {
+  background-color: @surface;
+  padding: 0.25em 0.75em;
+  margin: 0.5em 0;
+  margin-right: 0.5em;
+  border-radius: 4px;
+}
+
+#wireplumber {
+  background-color: @surface;
+  padding: 0.25em 0.75em;
+  margin: 0.5em 0;
+  margin-right: 0.5em;
+  border-radius: 4px;
+  color: @iris;
+}
+
+#cpu,
+#memory,
+#temperature {
+  background-color: @surface;
+  padding: 0.25em 0.75em;
+  margin: 0.5em 0;
+}
+
+#cpu {
+  border-radius: 4px 0 0 4px;
+  color: @muted;
+}
+
+#memory {
+  color: @subtle;
+}
+
+#temperature {
+  border-radius: 0 4px 4px 0;
+  margin-right: 0.5em;
+  color: @rose;
+}
+
+#temperature.critical {
+  color: @love;
+}
+
+#custom-wlogout {
+  background-color: @surface;
+  padding: 0.25em 0.8em;
+  margin: 0.5em 0;
+  margin-right: 1em;
+  border-radius: 50%;
+  color: @love;
+}

@@ -1,0 +1,38 @@
+window {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  color: #e0def4;
+  background-color: #31748f;
+  outline-style: none;
+  border: none;
+  border-width: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+  animation: gradient_f 20s ease-in infinite;
+}
+
+button:focus {
+  background-color: #c4a7e7;
+  background-size: 25%;
+}
+
+button:hover {
+  background-color: #eb6f92;
+  background-size: 30%;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+}
+
+#shutdown {
+  background-image: image(url("/usr/share/wlogout/assets/shutdown.svg"));
+}
+
+#reboot {
+  background-image: image(url("/usr/share/wlogout/assets/reboot.svg"));
+}
