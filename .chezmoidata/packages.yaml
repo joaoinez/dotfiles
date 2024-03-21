@@ -42,12 +42,9 @@ packages:
   # Apps
   - "chromium"
   - "code"
-  - "dolphin"
-  - "eog"
   - "steam"
   - "obsidian"
   - "openrgb"
-  - "okular"
   - "vesktop"
   # Themes
   - "rose-pine-gtk-theme-full"
