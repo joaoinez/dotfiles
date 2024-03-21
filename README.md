@@ -22,3 +22,4 @@ grub config
 sddm config and theming
 gtk and qt5 theming
 change docker image location
+add color to pacman.conf
