@@ -3,6 +3,7 @@ packages:
   - "dunst"
   - "hyprland"
   - "libnotify"
+  - "pavucontrol"
   - "polkit-kde-agent"
   - "qt5ct"
   - "qt5-wayland"
