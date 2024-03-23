@@ -12,14 +12,26 @@ makepkg -si
 How to run:
 
 ```sh
-chezmoi init --apply $GITHUB_USERNAME
+chezmoi init --apply joaoinez
 ```
 
 TODO:
-systemd services: sddm and docker.socket
-change shell from bash to zsh
-grub config
-sddm config and theming
-gtk and qt5 theming
-change docker image location
-add color to pacman.conf
+
+- grub config
+  - Add Windows entry
+- sddm config and theming
+  - /etc/sddm.conf.d/theme.conf
+  ```conf
+  [Theme]
+  Current-tokyo-night-sddm
+  ```
+- gtk and qt5 theming
+  - Rose Pine
+- change docker image location
+  - /etc/docker/daemon.json
+  ```json
+  {
+    "data-root": "/home/astherae/docker"
+  }
+  ```
+- add color to pacman.conf

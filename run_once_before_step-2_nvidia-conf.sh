@@ -11,4 +11,4 @@ sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.
 
 sudo touch /etc/modprobe.d/nvidia.conf
 
-echo 'options nvidia-drm modeset=1' >> /etc/modprobe.d/nvidia.conf
+sudo echo 'options nvidia-drm modeset=1' >> /etc/modprobe.d/nvidia.conf
