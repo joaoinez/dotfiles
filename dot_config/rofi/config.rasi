@@ -1,0 +1,7 @@
+configuration {
+  display-drun: "󰅂|";
+  drun-display-format: "{icon} {name}";
+  show-icons: true;
+}
+
+@theme "./themes/rose-pine.rasi"
