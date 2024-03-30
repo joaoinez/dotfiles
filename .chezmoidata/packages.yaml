@@ -42,10 +42,11 @@ packages:
   - "tmux"
   # Apps
   - "chromium"
+  - "firefox"
   - "steam"
   - "obsidian"
   - "openrgb"
-  - "thorium"
+  - "ticktick"
   - "vesktop"
   - "vscodium"
   # Themes
