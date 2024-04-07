@@ -1,8 +1,11 @@
 packages:
   # System
+  - "linux-zen-headers"
+  - "nvidia-dkms"
   - "dunst"
   - "hyprland"
   - "libnotify"
+  - "libva"
   - "pavucontrol"
   - "polkit-kde-agent"
   - "qt5ct"
@@ -27,7 +30,7 @@ packages:
   - "neofetch"
   - "ranger"
   - "zoxide"
-  - "zsh-autosuggestion"
+  - "zsh-autosuggestions"
   - "zsh-syntax-highlighting"
   # Dev
   - "bun"
