@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/bin/bash
 set -euo pipefail
 
 sudo chsh -s /usr/bin/zsh
