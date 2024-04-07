@@ -13,6 +13,7 @@ packages:
   - "qt6ct"
   - "qt6-wayland"
   - "nwg-look"
+  - "rofi"
   - "sddm-git"
   - "starship"
   - "swww"
