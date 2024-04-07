@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "Installing flatpaks..."
+
+{{ range .flatpaks -}}
+if ! flatpak info {{ . | quote }} > /dev/null ; then
+  flatpak install -y flathub {{ . | quote }}
+fi
+{{ end -}}

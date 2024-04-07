@@ -1,2 +1,5 @@
 README.md
-Wallpapers/
+.Wallpapers/
+.Wallpapers/**
+.etc/
+.etc/**

@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+echo "Installing packages..."
+
 {{ range .packages -}}
 if ! pacman -Qi {{ . | quote }} > /dev/null ; then
   paru -S --noconfirm {{ . | quote }}

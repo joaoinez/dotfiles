@@ -1,0 +1,4 @@
+flatpaks:
+  - "com.ticktick.TickTick"
+  - "dev.vencord.Vesktop"
+  - "md.obsidian.Obsidian"

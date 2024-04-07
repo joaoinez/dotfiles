@@ -1,4 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
+echo "Enabling pacman colors"
+
 sudo sed -i 's/#Color/Color/' /etc/pacman.conf

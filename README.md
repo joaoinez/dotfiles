@@ -3,6 +3,10 @@
 █▄▀ █▄█ ░█░ █▀░ █ █▄▄ ██▄ ▄█
 ```
 
+`archinstall`
+
+---
+
 Disable IPv6 (optional):
 
 ```sh
@@ -44,3 +48,4 @@ TODO:
   - Add Windows entry
 - gtk and qt5 theming
   - Rose Pine
+- mimeapps.list
