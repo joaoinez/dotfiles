@@ -33,7 +33,6 @@ packages:
   - "zsh-autosuggestions"
   - "zsh-syntax-highlighting"
   # Dev
-  - "bun"
   - "docker"
   - "docker-compose"
   - "github-cli"
