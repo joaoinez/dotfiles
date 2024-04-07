@@ -1,5 +1,24 @@
 # dotfiles
 
+Disable IPv6 (optional):
+
+```sh
+nmcli connection modify "Wired connection 1" ipv6.method "disabled"
+nmcli connection up "Wired connection 1"
+```
+
+Update system:
+
+```sh
+sudo pacman -Syu
+```
+
+Install git:
+
+```sh
+sudo pacman -S git
+```
+
 Install paru:
 
 ```sh
@@ -7,6 +26,7 @@ sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+cd ~
 ```
 
 How to run:
@@ -19,19 +39,5 @@ TODO:
 
 - grub config
   - Add Windows entry
-- sddm config and theming
-  - /etc/sddm.conf.d/theme.conf
-  ```conf
-  [Theme]
-  Current-tokyo-night-sddm
-  ```
 - gtk and qt5 theming
   - Rose Pine
-- change docker image location
-  - /etc/docker/daemon.json
-  ```json
-  {
-    "data-root": "/home/astherae/docker"
-  }
-  ```
-- add color to pacman.conf

@@ -3,17 +3,18 @@ packages:
   - "linux-zen-headers"
   - "nvidia-dkms"
   - "dunst"
-  - "hyprland"
+  - "hyprland-git"
   - "libnotify"
   - "libva"
   - "pavucontrol"
+  - "pamixer"
   - "polkit-kde-agent"
   - "qt5ct"
   - "qt5-wayland"
   - "qt6ct"
   - "qt6-wayland"
   - "nwg-look"
-  - "rofi"
+  - "rofi-lbonn-wayland-git"
   - "sddm-git"
   - "starship"
   - "swww"
@@ -22,6 +23,7 @@ packages:
   - "xdg-desktop-portal-hyprland"
   - "xdg-desktop-portal-gtk"
   - "zsh"
+
   # Utilities
   - "bat"
   - "btop"
@@ -33,6 +35,7 @@ packages:
   - "zoxide"
   - "zsh-autosuggestions"
   - "zsh-syntax-highlighting"
+
   # Dev
   - "docker"
   - "docker-compose"
@@ -43,6 +46,7 @@ packages:
   - "nvm"
   - "ollama-cuda"
   - "tmux"
+
   # Apps
   - "chromium"
   - "firefox"
@@ -51,9 +55,12 @@ packages:
   - "openrgb"
   - "ticktick"
   - "vesktop"
+  - "vscodium"
+
   # Themes
   - "rose-pine-gtk-theme"
   - "sddm-theme-tokyo-night-git"
+
   # Fonts
   - "noto-fonts"
   - "noto-fonts-cjk"
