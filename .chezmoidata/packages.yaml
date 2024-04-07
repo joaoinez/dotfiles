@@ -51,7 +51,7 @@ packages:
   - "ticktick"
   - "vesktop"
   # Themes
-  - "rose-pine-gtk-theme-full"
+  - "rose-pine-gtk-theme"
   - "sddm-theme-tokyo-night"
   # Fonts
   - "noto-fonts"
