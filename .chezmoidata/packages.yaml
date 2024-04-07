@@ -50,7 +50,6 @@ packages:
   - "openrgb"
   - "ticktick"
   - "vesktop"
-  - "vscodium"
   # Themes
   - "rose-pine-gtk-theme-full"
   - "sddm-theme-tokyo-night"
