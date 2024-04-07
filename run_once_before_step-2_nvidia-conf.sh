@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/bin/bash
 set -euo pipefail
 
 sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"/GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nvidia_drm.modeset=1"' /etc/default/grub
