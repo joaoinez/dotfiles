@@ -52,7 +52,7 @@ packages:
   - "vesktop"
   # Themes
   - "rose-pine-gtk-theme"
-  - "sddm-theme-tokyo-night"
+  - "sddm-theme-tokyo-night-git"
   # Fonts
   - "noto-fonts"
   - "noto-fonts-cjk"
