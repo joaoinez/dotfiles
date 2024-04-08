@@ -30,6 +30,12 @@
 curl -s https://raw.githubusercontent.com/JoaoInez/dotfiles/main/arch.sh | bash
 ```
 
+#### Run `chezmoi`
+
+```shell
+chezmoi init --apply joaoinez
+```
+
 <!-- ---
 TODO:
 
