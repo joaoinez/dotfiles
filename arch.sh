@@ -9,8 +9,8 @@ nmcli connection up "Wired connection 1"
 sudo pacman -Syu --noconfirm
 
 # Install git, cargo and paru
-sudo pacman -S cargo "$(cat arch.txt)"
-sudo pacman -S --needed base-devel git
+sudo pacman -S --needed --noconfirm base-devel git
+sudo pacman -S --assume-installed --noconfirm cargo
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
@@ -20,4 +20,4 @@ cd ~
 paru -S --noconfirm chezmoi
 
 # Init dotfiles
-# chezmoi init --apply joaoinez
+chezmoi init --apply joaoinez
