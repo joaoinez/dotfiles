@@ -20,4 +20,4 @@ cd ~
 paru -S --noconfirm chezmoi
 
 # Init dotfiles
-chezmoi init --apply joaoinez
+# chezmoi init --apply joaoinez
