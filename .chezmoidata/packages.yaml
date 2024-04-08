@@ -39,6 +39,7 @@ packages:
       - "ncdu"
       - "neofetch"
       - "ranger"
+      - "unzip"
       - "zoxide"
       - "zsh-autosuggestions"
       - "zsh-syntax-highlighting"
