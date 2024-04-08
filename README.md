@@ -41,7 +41,7 @@ nmcli connection up "Wired connection 1"
 sudo pacman -Syu
 ```
 
-#### Install paru:
+#### Install `paru`:
 
 ```shell
 sudo pacman -S --needed base-devel
@@ -49,6 +49,12 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 cd ~
+```
+
+#### Install `chezmoi`:
+
+```shell
+paru -S chezmoi
 ```
 
 ---
