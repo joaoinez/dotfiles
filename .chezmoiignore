@@ -2,7 +2,6 @@ Wallpapers/
 Wallpapers/**
 etc/
 etc/**
-arch.sh
 README.md
 {{- if ne .chezmoi.os "linux" }}
 dot_config/dunst/
