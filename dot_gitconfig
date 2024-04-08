@@ -1,9 +1,5 @@
 [user]
-	email = joaoinez.info@gmail.com
-	name = Joao Inez
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+  name = João Inez
+  email = joaoinez.info@gmail.com
+[pull]
+  rebase = true
