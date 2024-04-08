@@ -1,8 +1,11 @@
 #!/bin/bash
 set -euo pipefail
 
-if [[ $(zsh -c 'nvm current') == "none" ]]; then
+exec /usr/bin/zsh
+source ~/.zshrc
+
+if [[ $(nvm current) == "none" ]]; then
   echo "Installing node"
 
-  zsh -c 'nvm install node'
+  nvm install node
 fi
