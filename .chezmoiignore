@@ -3,7 +3,7 @@ README.md
 .Wallpapers/**
 .etc/
 .etc/**
-{{ if ne .chezmoi.os "linux" -}}
+{{- if ne .chezmoi.os "linux" }}
 dot_config/dunst/
 dot_config/dunst/**
 dot_config/hypr/
@@ -17,5 +17,4 @@ dot_config/waybar/**
 dot_config/wlogout/
 dot_config/wlogout/**
 dot_config/kdeglobals
-{{ if ne .chezmoi.os "darwin" -}}
-{{ end -}}
+{{- end }}
