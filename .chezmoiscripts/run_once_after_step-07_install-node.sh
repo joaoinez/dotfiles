@@ -1,6 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
 set -euo pipefail
 
-echo "Installing node"
 
-/usr/bin/zsh -i -c nvm install node
+if [ $(nvm current) = "none" ]; then
+  echo "Installing node"
+
+  nvm install node
+fi
