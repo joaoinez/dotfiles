@@ -1,6 +1,6 @@
 
 * {
-    font:   "NotoSerif Nerd Font 12";
+    font:   "NotoSans Nerd Font 12";
 
     bg0:     #191724;
     bg1:     #26233a;
