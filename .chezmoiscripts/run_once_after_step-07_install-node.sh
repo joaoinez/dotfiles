@@ -1,6 +1,7 @@
-#!/usr/bin/zsh
+#!/bin/bash
 set -euo pipefail
 
+exec /usr/bin/zsh
 source ~/.zshrc
 
 if [[ $(nvm current) == "none" ]]; then
