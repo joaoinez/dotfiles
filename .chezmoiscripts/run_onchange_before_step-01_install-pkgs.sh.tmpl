@@ -2,7 +2,8 @@
 #!/bin/bash
 set -euo pipefail
 
-echo "Installing packages..." <<EOF
+echo "Installing packages..."
+EOF
 {{ range .packages.linux.packages -}}
 paru -S --needed --noconfirm {{ . | quote }}
 {{ end -}}
