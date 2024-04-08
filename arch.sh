@@ -1,8 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-echo "Installing .slivers"
-read -p "Press any key to continue..."
+echo "Drawing .slivers"
 
 # Disable IPv6
 nmcli connection modify "Wired connection 1" ipv6.method "disabled"
@@ -25,6 +24,5 @@ paru -S --noconfirm chezmoi
 
 # Init dotfiles
 echo "Initializing chezmoi"
-sleep 1
 
 chezmoi init --apply joaoinez
