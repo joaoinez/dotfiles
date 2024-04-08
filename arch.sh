@@ -10,7 +10,7 @@ sudo pacman -Syu --noconfirm
 
 # Install git, cargo and paru
 sudo pacman -S --needed base-devel git
-1 | sudo pacman -S cargo
+sudo pacman -S --asexplicit cargo
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
