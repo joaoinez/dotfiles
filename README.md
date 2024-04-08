@@ -22,7 +22,7 @@
 
 #### Run `archinstall` script
 
-#### Add `git` to the additional packages (optional)
+#### Add `git` to the additional packages
 
 ---
 
@@ -39,12 +39,6 @@ nmcli connection up "Wired connection 1"
 
 ```shell
 sudo pacman -Syu
-```
-
-#### Install git:
-
-```shell
-sudo pacman -S git
 ```
 
 #### Install paru:
