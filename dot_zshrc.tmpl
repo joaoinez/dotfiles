@@ -25,7 +25,7 @@ alias gst="git status"
 alias grc="git rm -r --cached ."
 {{ if eq .chezmoi.os "linux" -}}
 alias yay="paru"
-{{ end -}}
+{{ end }}
 
 # █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█
 # █▀█ █ ▄█ ░█░ █▄█ █▀▄ ░█░
@@ -84,7 +84,7 @@ source /usr/share/nvm/init-nvm.sh
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-{{ end -}}
+{{ end }}
 
 # █▄▄ █░█ █▄░█
 # █▄█ █▄█ █░▀█
@@ -92,7 +92,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/home/astherae/.bun/_bun" ] && source "/home/astherae/.bun/_bun"
 {{ else if eq .chezmoi.os "darwin" -}}
 [ -s "/Users/joaoinez/.bun/_bun" ] && source "/Users/joaoinez/.bun/_bun"
-{{ end -}}
+{{ end }}
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"

@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+echo "Installing .slivers"
+read -p "Press any key to continue..."
+
 # Disable IPv6
 nmcli connection modify "Wired connection 1" ipv6.method "disabled"
 nmcli connection up "Wired connection 1"
@@ -9,8 +12,9 @@ nmcli connection up "Wired connection 1"
 sudo pacman -Syu --noconfirm
 
 # Install git, cargo and paru
-sudo pacman -S --needed --noconfirm base-devel git
-sudo pacman -Sdd --needed --noconfirm cargo
+sudo pacman -S --needed --noconfirm base-devel
+sudo pacman -S --noconfirm git
+sudo pacman -Sdd --noconfirm cargo
 git clone https://aur.archlinux.org/paru.git
 cd paru
 echo "yes" | makepkg -si
@@ -20,4 +24,7 @@ cd ~
 paru -S --noconfirm chezmoi
 
 # Init dotfiles
+echo "Initializing chezmoi"
+sleep 1
+
 chezmoi init --apply joaoinez

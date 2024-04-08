@@ -3,9 +3,11 @@
 set -euo pipefail
 
 echo "Installing packages..."
+sleep 1
+
 {{ range .packages.linux.packages -}}
 if ! pacman -Qi {{ . | quote }} > /dev/null ; then
-  paru -S --needed --noconfirm {{ . | quote }}
+  paru -S --noconfirm {{ . | quote }}
 fi
 {{ end -}}
 {{ range .packages.linux.flatpaks -}}
@@ -18,6 +20,8 @@ fi
 set -euo pipefail
 
 echo "Installing packages..."
+sleep 1
+
 {{ range .packages.macos.casks -}}
 if ! brew list {{ . | quote }} > /dev/null ; then
   brew install --cask -q {{ . | quote }}
