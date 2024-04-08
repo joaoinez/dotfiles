@@ -55,6 +55,7 @@ packages:
       - "tmux"
 
       # Apps
+      - "dolphin"
       - "firefox"
       - "chromium"
       - "steam"
@@ -75,3 +76,4 @@ packages:
       - "com.ticktick.TickTick"
       - "dev.vencord.Vesktop"
       - "md.obsidian.Obsidian"
+      - "org.gnome.eog"
