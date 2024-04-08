@@ -16,7 +16,8 @@
 
 1. Press `e` during GRUB screen
 2. Add `ipv6.disable=1` at the end of the `linux` line
-3. Save GRUB settings by pressing `Ctrl + x`
+3. Add `audit=0` at the end of the `linux` line
+4. Save GRUB settings by pressing `Ctrl + x`
 
 #### Run `archinstall` `(minimal)` script
 
