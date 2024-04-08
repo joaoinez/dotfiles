@@ -10,7 +10,7 @@
     "cpu",
     "memory",
     "temperature",
-    "custom/wlogout",
+    "custom/wlogout"
   ],
   // "clock": {
   //   "format": "{: %H:%M |  %A, %B %d, %Y}",
@@ -31,42 +31,41 @@
   //   },
   // },
   "hyprland/workspaces": {
-    "format": "<sub>{icon}</sub>",
+    "format": "<sub>{icon}</sub>"
   },
   "hyprland/window": {
     "max-length": 50,
-    "separate-outputs": true,
+    "separate-outputs": true
   },
-
   "wireplumber": {
     "format": "{volume} {icon}",
     "format-muted": "",
     "on-click": "helvum",
-    "format-icons": ["", "", ""],
+    "format-icons": ["", "", ""]
   },
   "tray": {
-    "spacing": 10,
+    "spacing": 10
   },
   "cpu": {
     "format": "{usage}% ",
-    "tooltip": false,
+    "tooltip": false
   },
   "memory": {
-    "format": "{}% ",
+    "format": "{}% "
   },
   "temperature": {
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""],
+    "format-icons": ["", "", ""]
   },
   "custom/wlogout": {
     "format": "󰐥",
-    "on-click": "wlogout -b 2 -c 0 -r 0 --protocol layer-shell -m 400",
+    "on-click": "wlogout -b 2 -c 0 -r 0 --protocol layer-shell -m 400"
   },
   "custom/updates": {
     "format": "{}  ",
     "interval": "once",
     "exec": "~/.config/waybar/scripts/updates.sh",
-    "on-click": "yay",
-  },
+    "on-click": "yay"
+  }
 }

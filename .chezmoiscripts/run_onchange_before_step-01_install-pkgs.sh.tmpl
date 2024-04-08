@@ -1,10 +1,18 @@
+{{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 set -euo pipefail
 
-echo "Installing packages..."
-
-{{ range .packages -}}
+echo "Installing packages..." <<EOF
+{{ range .packages.linux.arch -}}
 if ! pacman -Qi {{ . | quote }} > /dev/null ; then
   paru -S --noconfirm {{ . | quote }}
 fi
+{{ end -}}
+{{ range .packages.linux.flatpaks -}}
+if ! flatpak info {{ . | quote }} > /dev/null ; then
+  flatpak install -y flathub {{ . | quote }}
+fi
+{{ end -}}
+EOF
+{{ else if eq .chezmoi.os "darwin" -}}
 {{ end -}}
