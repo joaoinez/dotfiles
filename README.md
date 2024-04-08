@@ -26,43 +26,10 @@
 
 ---
 
-### Chezmoi Installation
-
-#### Disable IPv6 (optional):
+### Setup script
 
 ```shell
-nmcli connection modify "Wired connection 1" ipv6.method "disabled"
-nmcli connection up "Wired connection 1"
-```
-
-#### Update system:
-
-```shell
-sudo pacman -Syu
-```
-
-#### Install `paru`:
-
-```shell
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-cd ~
-```
-
-#### Install `chezmoi`:
-
-```shell
-paru -S chezmoi
-```
-
----
-
-### Usage
-
-```shell
-chezmoi init --apply joaoinez
+curl -s https://raw.githubusercontent.com/JoaoInez/dotfiles/main/arch.sh | bash
 ```
 
 ---

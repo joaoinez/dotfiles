@@ -1,10 +1,9 @@
+Wallpapers/
+Wallpapers/**
+etc/
+etc/**
+arch.sh
 README.md
-.Wallpapers/
-.Wallpapers/**
-.etc/
-.etc/**
-.scripts/
-.scripts/**
 {{- if ne .chezmoi.os "linux" }}
 dot_config/dunst/
 dot_config/dunst/**
