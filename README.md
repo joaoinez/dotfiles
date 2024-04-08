@@ -22,8 +22,6 @@
 
 #### Run `archinstall` script
 
-#### Add `git` to the additional packages
-
 ---
 
 ### Setup script
