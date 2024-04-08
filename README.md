@@ -28,7 +28,7 @@
 #### Run `arch.sh` script
 
 ```shell
-curl -s https://raw.githubusercontent.com/JoaoInez/dotfiles/main/arch.sh | bash
+curl -fsSL https://joaoinez.me/arch.sh | bash
 ```
 
 <!-- ---
