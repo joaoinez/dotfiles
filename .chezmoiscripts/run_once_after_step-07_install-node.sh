@@ -3,4 +3,4 @@ set -euo pipefail
 
 echo "Installing node"
 
-/usr/bin/zsh -i -c source ~/.zshrc && nvm install node
+/usr/bin/zsh -i -c nvm install node
