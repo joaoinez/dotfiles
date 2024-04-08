@@ -2,7 +2,7 @@
 set -euo pipefail
 
 
-if ! [ -d ~/.bin ]; then
+if ! [ -d ~/.bun ]; then
   echo "Installing bun"
 
   curl -fsSL https://bun.sh/install | bash
