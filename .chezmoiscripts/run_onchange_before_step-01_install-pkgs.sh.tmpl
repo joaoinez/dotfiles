@@ -5,7 +5,7 @@ set -euo pipefail
 echo "Installing packages..." <<EOF
 {{ range .packages.linux.packages -}}
 if ! pacman -Qi {{ . | quote }} > /dev/null ; then
-  paru -S --noconfirm {{ . | quote }}
+  paru -S --needed --noconfirm {{ . | quote }}
 fi
 {{ end -}}
 {{ range .packages.linux.flatpaks -}}
