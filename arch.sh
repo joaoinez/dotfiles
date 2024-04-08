@@ -8,7 +8,7 @@ nmcli connection up "Wired connection 1"
 # Update system
 sudo pacman -Syu --noconfirm
 
-# Install git and paru
+# Install git, cargo and paru
 sudo pacman -S --needed base-devel git cargo
 git clone https://aur.archlinux.org/paru.git
 cd paru
