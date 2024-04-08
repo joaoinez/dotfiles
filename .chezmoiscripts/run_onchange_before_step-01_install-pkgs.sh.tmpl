@@ -3,7 +3,7 @@
 set -euo pipefail
 
 echo "Installing packages..." <<EOF
-{{ range .packages.linux.arch -}}
+{{ range .packages.linux.packages -}}
 if ! pacman -Qi {{ . | quote }} > /dev/null ; then
   paru -S --noconfirm {{ . | quote }}
 fi
@@ -11,6 +11,22 @@ fi
 {{ range .packages.linux.flatpaks -}}
 if ! flatpak info {{ . | quote }} > /dev/null ; then
   flatpak install -y flathub {{ . | quote }}
+fi
+{{ end -}}
+EOF
+{{ else if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+set -euo pipefail
+
+echo "Installing packages..." <<EOF
+{{ range .packages.macos.casks -}}
+if ! brew list {{ . | quote }} > /dev/null ; then
+  brew install --cask -q {{ . | quote }}
+fi
+{{ end -}}
+{{ range .packages.macos.brews -}}
+if ! brew list {{ . | quote }} > /dev/null ; then
+  brew install -q {{ . | quote }}
 fi
 {{ end -}}
 EOF
