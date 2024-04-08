@@ -25,10 +25,10 @@
 
 ### Chezmoi dotfiles
 
-#### Run `arch.sh` script
+#### Run [arch.sh](https://github.com/JoaoInez/personal-website/blob/main/arch.sh) script
 
 ```shell
-curl -fsSL https://joaoinez.me/arch.sh | bash
+curl -fsSL joaoinez.me/arch.sh | bash
 ```
 
 <!-- ---
