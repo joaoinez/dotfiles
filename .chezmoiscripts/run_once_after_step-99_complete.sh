@@ -1,5 +1,5 @@
 #!/bin/bash
 set -euo pipefail
 
-# clear
+clear
 echo "Installation completed. You may now reboot."

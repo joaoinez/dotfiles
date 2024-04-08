@@ -24,7 +24,8 @@ alias vim="nvim"
 alias gst="git status"
 alias grc="git rm -r --cached ."
 alias gfp="git fetch && git pull"
-alias home="chezmoi cd"
+alias home="chezmoi cd ~"
+alias cmu="chezmoi update"
 {{ if eq .chezmoi.os "linux" -}}
 alias yay="paru"
 {{ end }}
