@@ -59,7 +59,7 @@ cd ~
 
 ---
 
-### Usage:
+### Usage
 
 ```shell
 chezmoi init --apply joaoinez
