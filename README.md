@@ -18,7 +18,7 @@
 2. Add `ipv6.disable=1` at the end of the `linux` line
 3. Save GRUB settings by pressing `Ctrl + x`
 
-#### Run `archinstall` script
+#### Run `archinstall (minimal)` script
 
 ---
 
