@@ -24,20 +24,20 @@
 
 ---
 
-### Setup script
+### Chezmoi dotfiles
+
+#### Run `arch.sh` script
 
 ```shell
 curl -s https://raw.githubusercontent.com/JoaoInez/dotfiles/main/arch.sh | bash
 ```
 
----
-
-#### TODO:
+<!-- ---
+TODO:
 
 - grub config
   - Add Windows entry
 - gtk and qt5 theming
   - Rose Pine
 - mimeapps.list
-
-</details>
+--- -->
