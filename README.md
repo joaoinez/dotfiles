@@ -35,19 +35,19 @@ nmcli connection modify "Wired connection 1" ipv6.method "disabled"
 nmcli connection up "Wired connection 1"
 ```
 
-2. Update system:
+#### Update system:
 
 ```shell
 sudo pacman -Syu
 ```
 
-3. Install git:
+#### Install git:
 
 ```shell
 sudo pacman -S git
 ```
 
-4. Install paru:
+#### Install paru:
 
 ```shell
 sudo pacman -S --needed base-devel
@@ -64,6 +64,8 @@ cd ~
 ```shell
 chezmoi init --apply joaoinez
 ```
+
+---
 
 #### TODO:
 
