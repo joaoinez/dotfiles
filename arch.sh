@@ -13,7 +13,7 @@ sudo pacman -S --needed --noconfirm base-devel git
 { echo "1"; echo "yes"; } | sudo pacman -S --needed cargo
 git clone https://aur.archlinux.org/paru.git
 cd paru
-makepkg -si
+echo "yes" | makepkg -si
 cd ~
 
 # Install chezmoi
