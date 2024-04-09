@@ -6,11 +6,15 @@ echo "Installing packages..."
 
 {{ range .packages.linux.packages -}}
 if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
+  echo "Installing package {{ . | quote }}"
+
   paru -S --noconfirm {{ . | quote }}
 fi
 {{ end -}}
 {{ range .packages.linux.flatpaks -}}
 if ! flatpak info {{ . | quote }} &>/dev/null ; then
+  echo "Installing flatpak {{ . | quote }}"
+
   flatpak install -y flathub {{ . | quote }}
 fi
 {{ end -}}
@@ -22,11 +26,15 @@ echo "Installing packages..."
 
 {{ range .packages.macos.casks -}}
 if ! brew list {{ . | quote }} &>/dev/null ; then
+  echo "Installing cask {{ . | quote }}"
+
   brew install --cask -q {{ . | quote }}
 fi
 {{ end -}}
 {{ range .packages.macos.brews -}}
 if ! brew list {{ . | quote }} &>/dev/null ; then
+  echo "Installing brew {{ . | quote }}"
+
   brew install -q {{ . | quote }}
 fi
 {{ end -}}

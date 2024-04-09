@@ -34,7 +34,9 @@ packages:
       # Utilities
       - "bat"
       - "btop"
+      - "cliphist"
       - "eza"
+      - "fancontrol-gui"
       - "fzf"
       - "ncdu"
       - "neofetch"
