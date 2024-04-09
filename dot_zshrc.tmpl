@@ -50,10 +50,10 @@ alias .verify="chezmoi verify"
 alias sourcez="source ~/.zshrc"
 
 
-{{- if eq .chezmoi.os "linux" -}}
+{{ if eq .chezmoi.os "linux" -}}
 # AUR
 alias yay="paru"
-{{ end }}
+{{ end -}}
 
 # Scripts directory
 export SCRIPTS="~/.local/bin"
