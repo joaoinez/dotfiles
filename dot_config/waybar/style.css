@@ -51,6 +51,18 @@ tooltip label {
   color: @pine;
 }
 
+#window {
+  background-color: @surface;
+  padding: 0.25em 0.75em;
+  margin: 0.5em 0;
+  margin-right: 0.5em;
+  border-radius: 4px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
 #tray {
   background-color: @surface;
   padding: 0.25em 0.75em;
@@ -97,7 +109,7 @@ tooltip label {
 
 #custom-wlogout {
   background-color: @surface;
-  padding: 0.25em 0.8em;
+  padding: 0.25em 0.75em;
   margin: 0.5em 0;
   margin-right: 1em;
   border-radius: 50%;
