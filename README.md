@@ -30,12 +30,3 @@
 curl -fsSL joaoinez.me/arch.sh | bash
 ```
 
-<!-- ---
-TODO:
-
-- grub config
-  - Add Windows entry
-- gtk and qt5 theming
-  - Rose Pine
-- mimeapps.list
---- -->

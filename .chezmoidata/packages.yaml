@@ -61,6 +61,7 @@ packages:
       - "chromium"
       - "steam"
       - "openrgb"
+      - "vesktop"
 
       # Themes
       - "rose-pine-gtk-theme-full"
@@ -75,7 +76,6 @@ packages:
       - "ttf-noto-nerd"
     flatpaks:
       - "com.ticktick.TickTick"
-      - "dev.vencord.Vesktop"
       - "md.obsidian.Obsidian"
       - "org.gnome.eog"
   macos:
