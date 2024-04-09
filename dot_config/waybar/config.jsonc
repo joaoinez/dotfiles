@@ -12,8 +12,8 @@
     "temperature",
     "custom/wlogout"
   ],
-  // "clock": {
-  //   "format": "{: %H:%M |  %A, %B %d, %Y}",
+  "clock": {
+    "format": "{: %H:%M |  %A, %B %d, %Y}",
   //   "tooltip-format": "<tt><small>{calendar}</small></tt>",
   //   "calendar": {
   //     "mode": "year",
@@ -29,7 +29,7 @@
   //       "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
   //     },
   //   },
-  // },
+  },
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>"
   },
