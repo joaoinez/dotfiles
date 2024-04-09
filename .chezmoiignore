@@ -3,6 +3,8 @@ Wallpapers/**
 etc/
 etc/**
 README.md
+.chezmoiscripts/
+.chezmoiscripts/**
 {{- if ne .chezmoi.os "linux" }}
 dot_config/dunst/
 dot_config/dunst/**
