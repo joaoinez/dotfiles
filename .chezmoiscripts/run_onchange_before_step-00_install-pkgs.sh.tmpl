@@ -2,8 +2,6 @@
 #!/bin/bash
 set -euo pipefail
 
-echo "Installing packages..."
-
 {{ range .packages.linux.packages -}}
 if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
   echo "Installing package {{ . | quote }}"
@@ -21,8 +19,6 @@ fi
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 set -euo pipefail
-
-echo "Installing packages..."
 
 {{ range .packages.macos.casks -}}
 if ! brew list {{ . | quote }} &>/dev/null ; then
