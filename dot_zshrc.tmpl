@@ -15,15 +15,25 @@
 
 # ▄▀█ █░░ █ ▄▀█ █▀ █▀▀ █▀
 # █▀█ █▄▄ █ █▀█ ▄█ ██▄ ▄█
+
+# Clear everything
 alias clear="clear && printf '\e[3J'"
+
+# Filesystem
 alias ls="eza"
 alias ll="eza -lah --git"
 alias tree="eza -T -L=1"
 alias cat="bat"
+
+# Neovim
 alias vim="nvim"
+
+# Git
 alias gst="git status"
 alias grc="git rm -r --cached ."
 alias gfp="git fetch && git pull"
+
+# Chezmoi
 alias .cd="chezmoi cd ~"
 alias .apply="chezmoi apply"
 alias .update="chezmoi update"
@@ -34,8 +44,13 @@ alias .vim="chezmoi edit --apply"
 alias .merge="chezmoi merge"
 alias .diff="chezmoi diff"
 alias .managed="chezmoi managed"
+
+# Source .zshrc
 alias sourcez="source ~/.zshrc"
+
+
 {{ if eq .chezmoi.os "linux" -}}
+# AUR
 alias yay="paru"
 {{ end }}
 
