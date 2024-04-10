@@ -2,7 +2,7 @@
 {
   "layer": "top", // Waybar at top layer
   "spacing": 0, // Gaps between modules (0)
-  "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/window"],
+  "modules-left": ["custom/os", "hyprland/workspaces", "custom/divider", "hyprland/window"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
@@ -17,18 +17,21 @@
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>"
   },
+  "custom/divider": {
+    "format": "󰜥"
+  },
   "hyprland/window": {
     "format": "{}",
     "max-length": 50,
     "separate-outputs": true,
     "rewrite": {
-      "(.*) — Mozilla Firefox": "󰈹 Firefox",
-      "Kitty": " Kitty",
-      "(.*) • Discord": " Discord"
+      "(.*) — Mozilla Firefox": "Firefox 󰈹",
+      "Kitty": "Kitty ",
+      "(.*)Discord(.*)": "Discord "
     }
   },
   "clock": {
-    "format": "{:%H:%M  %A, %B %d, %Y }",
+    "format": "{:%H:%M   %A, %B %d, %Y }",
     "on-click": "flatpak run org.gnome.Calendar"
   },
   "tray": {
