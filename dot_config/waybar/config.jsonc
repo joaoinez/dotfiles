@@ -11,21 +11,24 @@
     "custom/wlogout"
   ],
   "custom/os": {
-    "format": "󰣇"
+    "format": "󰣇",
+    "on-click": "kitty --title Kitty"
   },
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>"
   },
   "hyprland/window": {
-    "format": "󰮺 {}",
+    "format": "{}",
     "max-length": 50,
     "separate-outputs": true,
     "rewrite": {
-      "(.*) — Mozilla Firefox": "󰈹 $1"
+      "(.*) — Mozilla Firefox": "󰈹 Firefox",
+      "Kitty": " $1",
+      "(.*)Discord": " Discord"
     }
   },
   "clock": {
-    "format": " {:%H:%M |  %A, %B %d, %Y}",
+    "format": "{:%H:%M  %A, %B %d, %Y }",
     "on-click": "flatpak run org.gnome.Calendar"
   },
   "tray": {
