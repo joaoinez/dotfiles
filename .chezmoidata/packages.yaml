@@ -81,6 +81,7 @@ packages:
       - "com.ticktick.TickTick"
       - "md.obsidian.Obsidian"
       - "org.gnome.Calculator"
+      - "org.gnome.Calendar"
       - "org.gnome.eog"
   macos:
     casks:
