@@ -2,15 +2,12 @@
 {
   "layer": "top", // Waybar at top layer
   "spacing": 0, // Gaps between modules (0)
-  "modules-left": ["clock", "hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
   "modules-right": [
     "tray",
     "wireplumber",
     "network",
-    "cpu",
-    "memory",
-    "temperature",
     "custom/wlogout"
   ],
   "clock": {
