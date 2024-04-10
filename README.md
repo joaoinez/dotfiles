@@ -30,3 +30,9 @@
 curl -fsSL joaoinez.me/arch.sh | bash
 ```
 
+#### Run chezmoi
+
+```shell
+chezmoi init --apply joaoinez 
+```
+
