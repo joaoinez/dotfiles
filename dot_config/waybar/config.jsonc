@@ -42,11 +42,6 @@
     "interval": 60,
     "max-length": 50
   },
-  "pulseaudio/slider": {
-    "min": 0,
-    "max": 100,
-    "orientation": "horizontal"
-  },
   "custom/wlogout": {
     "format": "󰐥",
     "on-click": "wlogout -b 2 -c 0 -r 0 --protocol layer-shell -m 400"
