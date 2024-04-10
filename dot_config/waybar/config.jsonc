@@ -17,7 +17,7 @@
     "format": "<sub>{icon}</sub>"
   },
   "hyprland/window": {
-    "format": "{}",
+    "format": "󰮺 {}",
     "max-length": 50,
     "separate-outputs": true,
     "rewrite": {
