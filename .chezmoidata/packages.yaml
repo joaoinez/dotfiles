@@ -80,6 +80,7 @@ packages:
     flatpaks:
       - "com.ticktick.TickTick"
       - "md.obsidian.Obsidian"
+      - "org.gnome.Calculator"
       - "org.gnome.eog"
   macos:
     casks:
