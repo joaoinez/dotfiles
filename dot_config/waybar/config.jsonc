@@ -11,7 +11,7 @@
     "custom/wlogout"
   ],
   "custom/os": {
-    "format": ""
+    "format": "󰣇"
   },
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>"
