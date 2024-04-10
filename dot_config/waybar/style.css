@@ -24,10 +24,12 @@ tooltip label {
 }
 
 #custom-os {
-  color: @pine;
-  padding: 0.25em 0;
+  color: @base;
+  background-color: @text;
+  padding: 0.25em 0.7em;
   margin: 0.5em 0;
   margin-left: 1em;
+  border-radius: 50%;
 }
 
 #workspaces {
@@ -97,7 +99,7 @@ window#waybar.empty #window {
 
 #custom-wlogout {
   background-color: @surface;
-  padding: 0.25em 0.75em;
+  padding: 0.25em 0.7em;
   margin: 0.5em 0;
   margin-right: 1em;
   border-radius: 50%;
