@@ -23,20 +23,11 @@ tooltip label {
   color: @text;
 }
 
-#clock {
-  background-color: @surface;
-  padding: 0.25em 1em;
-  margin: 0.5em 0;
-  margin-left: 1em;
-  border-radius: 4px;
-  color: @gold;
-}
-
 #workspaces {
   background-color: @surface;
   padding: 0.25em 0.5em;
   margin: 0.5em 0;
-  margin-left: 0.5em;
+  margin-left: 1em;
   border-radius: 4px;
 }
 
@@ -63,6 +54,14 @@ window#waybar.empty #window {
     background-color: transparent;
 }
 
+#clock {
+  background-color: @surface;
+  padding: 0.25em 1em;
+  margin: 0.5em 0;
+  border-radius: 4px;
+  color: @gold;
+}
+
 #tray {
   background-color: @surface;
   padding: 0.25em 0.75em;
@@ -87,33 +86,6 @@ window#waybar.empty #window {
   margin-right: 0.5em;
   border-radius: 4px;
   color: @iris;
-}
-
-#cpu,
-#memory,
-#temperature {
-  background-color: @surface;
-  padding: 0.25em 0.75em;
-  margin: 0.5em 0;
-}
-
-#cpu {
-  border-radius: 4px 0 0 4px;
-  color: @muted;
-}
-
-#memory {
-  color: @subtle;
-}
-
-#temperature {
-  border-radius: 0 4px 4px 0;
-  margin-right: 0.5em;
-  color: @rose;
-}
-
-#temperature.critical {
-  color: @love;
 }
 
 #custom-wlogout {
