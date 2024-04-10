@@ -23,7 +23,7 @@
     "separate-outputs": true,
     "rewrite": {
       "(.*) — Mozilla Firefox": "󰈹 Firefox",
-      "Kitty": " $1",
+      "Kitty": " Kitty",
       "(.*)Discord": " Discord"
     }
   },
