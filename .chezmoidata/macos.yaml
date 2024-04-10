@@ -1,0 +1,31 @@
+macos:
+  casks:
+    - "arc"
+    - "balenaetcher"
+    - "docker"
+    - "figma"
+    - "kitty"
+    - "maccy"
+    - "notion"
+    - "obsidian"
+    - "qbittorrent"
+    - "spotify"
+    - "ticktick"
+    - "whatsapp"
+  brews:
+    # Utilities
+    - "bat"
+    - "btop"
+    - "eza"
+    - "fzf"
+    - "neofetch"
+    - "wget"
+    - "zoxide"
+
+    # Dev
+    - "docker-compose"
+    - "gh"
+    - "neovim"
+    - "nvm"
+    - "ollama"
+    - "tmux"

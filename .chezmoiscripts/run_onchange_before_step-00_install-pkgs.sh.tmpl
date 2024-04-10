@@ -16,22 +16,4 @@ if ! flatpak info {{ . | quote }} &>/dev/null ; then
   flatpak install -y flathub {{ . | quote }}
 fi
 {{ end -}}
-{{ else if eq .chezmoi.os "darwin" -}}
-#!/bin/bash
-set -euo pipefail
-
-{{ range .packages.macos.casks -}}
-if ! brew list {{ . | quote }} &>/dev/null ; then
-  echo "Installing cask {{ . | quote }}"
-
-  brew install --cask -q {{ . | quote }}
-fi
-{{ end -}}
-{{ range .packages.macos.brews -}}
-if ! brew list {{ . | quote }} &>/dev/null ; then
-  echo "Installing brew {{ . | quote }}"
-
-  brew install -q {{ . | quote }}
-fi
-{{ end -}}
 {{ end -}}
