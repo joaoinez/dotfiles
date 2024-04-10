@@ -24,7 +24,7 @@
     "rewrite": {
       "(.*) — Mozilla Firefox": "󰈹 Firefox",
       "Kitty": " Kitty",
-      "(.*) Discord": " Discord"
+      "(.*) • Discord": " Discord"
     }
   },
   "clock": {
