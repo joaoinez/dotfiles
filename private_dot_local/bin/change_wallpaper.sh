@@ -15,7 +15,7 @@ if [[ $# -lt 1 ]] || [[ ! -d $1   ]]; then
 fi
 
 # This controls (in seconds) when to switch to the next image
-INTERVAL=3600
+INTERVAL=1800
 
 while true; do
 	find "$1" -type f \
