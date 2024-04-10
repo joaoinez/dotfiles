@@ -15,7 +15,6 @@
   },
       "hyprland/window": {
         "format": "  {}",
-        "rotate": 90,
         "separate-outputs": true,
         "rewrite": {
             "${USER}@${set_sysname}:(.*)": "$1 ",
