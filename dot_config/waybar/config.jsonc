@@ -31,8 +31,8 @@
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "󰈀 | {bandwidthDownBytes}  | {bandwidthUpBytes} ",
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr}",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
