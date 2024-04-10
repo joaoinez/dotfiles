@@ -10,16 +10,17 @@
     "network",
     "custom/wlogout"
   ],
-  "clock": {
-    "format": " {:%H:%M |  %A, %B %d, %Y}",
-    "on-click": "flatpak run org.gnome.Calendar"
-  },
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>"
   },
   "hyprland/window": {
     "max-length": 50,
-    "separate-outputs": true
+    "separate-outputs": true,
+    "all-outputs": true
+  },
+  "clock": {
+    "format": " {:%H:%M |  %A, %B %d, %Y}",
+    "on-click": "flatpak run org.gnome.Calendar"
   },
   "tray": {
     "spacing": 10
