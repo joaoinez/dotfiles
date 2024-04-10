@@ -2,7 +2,7 @@
 {
   "layer": "top", // Waybar at top layer
   "spacing": 0, // Gaps between modules (0)
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-left": ["custom/os", "hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
@@ -10,6 +10,9 @@
     "network",
     "custom/wlogout"
   ],
+  "custom/os": {
+    "format": ""
+  },
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>"
   },
@@ -18,7 +21,7 @@
     "max-length": 50,
     "separate-outputs": true,
     "rewrite": {
-      "(.*) — Mozilla Firefox": "F $1"
+      "(.*) — Mozilla Firefox": "󰈹 $1"
     }
   },
   "clock": {
