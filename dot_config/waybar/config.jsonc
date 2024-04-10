@@ -7,7 +7,6 @@
   "modules-right": [
     "tray",
     "wireplumber",
-    "pulseaudio/slider",
     "network",
     "custom/wlogout"
   ],
