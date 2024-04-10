@@ -23,11 +23,18 @@ tooltip label {
   color: @text;
 }
 
+#custom-os {
+  color: @pine;
+  padding: 0.25em 0;
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+
 #workspaces {
   background-color: @surface;
   padding: 0.25em 0.5em;
   margin: 0.5em 0;
-  margin-left: 1em;
+  margin-left: 0.5em;
   border-radius: 4px;
 }
 
