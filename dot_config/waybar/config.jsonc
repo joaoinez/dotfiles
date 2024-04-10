@@ -42,17 +42,10 @@
     "interval": 60,
     "max-length": 50
   },
-  "cpu": {
-    "format": "{usage}% ",
-    "tooltip": false
-  },
-  "memory": {
-    "format": "{}% "
-  },
-  "temperature": {
-    "critical-threshold": 80,
-    "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""]
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
   },
   "custom/wlogout": {
     "format": "󰐥",
