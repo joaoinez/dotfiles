@@ -2,11 +2,13 @@
 #!/bin/bash
 set -euo pipefail
 
+echo "Installing brews and casks"
+
 brew bundle --no-lock --file=/dev/stdin <<EOF
-{{ range .packages.darwin.brews -}}
+{{ range .macos.brews -}}
 brew {{ . | quote }}
 {{ end -}}
-{{ range .packages.darwin.casks -}}
+{{ range .macos.casks -}}
 cask {{ . | quote }}
 {{ end -}}
 EOF

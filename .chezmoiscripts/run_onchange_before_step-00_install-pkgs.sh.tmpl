@@ -2,14 +2,14 @@
 #!/bin/bash
 set -euo pipefail
 
-{{ range .packages.linux.packages -}}
+{{ range .linux.packages -}}
 if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
   echo "Installing package {{ . | quote }}"
 
   paru -S --noconfirm {{ . | quote }}
 fi
 {{ end -}}
-{{ range .packages.linux.flatpaks -}}
+{{ range .linux.flatpaks -}}
 if ! flatpak info {{ . | quote }} &>/dev/null ; then
   echo "Installing flatpak {{ . | quote }}"
 
