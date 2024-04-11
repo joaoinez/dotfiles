@@ -1,5 +1,5 @@
-# #!/bin/bash
-# set -euo pipefail
+#!/bin/bash
+set -euo pipefail
 
 # mkdir ~/Projects
 # mkdir ~/Projects/Personal
