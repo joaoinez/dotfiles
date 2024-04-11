@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-# echo "Installing bun"
+echo "Installing bun"
 
-# curl -fsSL https://bun.sh/install | bash
+curl -fsSL https://bun.sh/install | bash &>/dev/null

@@ -2,8 +2,8 @@
 #!/bin/bash
 set -euo pipefail
 
-# echo "Enabling services"
+echo "Enabling services"
 
-# sudo systemctl enable sddm.service
-# sudo systemctl enable docker.socket
+sudo systemctl enable sddm.service &>/dev/null
+sudo systemctl enable docker.socket &>/dev/null
 {{ end -}}

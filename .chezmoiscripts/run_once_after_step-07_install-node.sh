@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-# echo "Installing node"
+echo "Installing node"
 
-# zsh -c 'source ~/.zshrc && nvm install node'
+zsh -c 'source ~/.zshrc && nvm install node' &>/dev/null
