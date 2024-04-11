@@ -68,29 +68,29 @@ linux:
     - "ollama-cuda"
     - "tmux"
 
-    # # Apps
-    # - "dolphin"
-    # - "firefox"
-    # - "chromium"
-    # - "steam"
-    # - "openrgb"
-    # - "pavucontrol"
-    # - "vesktop"
+    # Apps
+    - "dolphin"
+    - "firefox"
+    - "chromium"
+    - "steam"
+    - "openrgb"
+    - "pavucontrol"
+    - "vesktop"
 
-    # # Themes
-    # - "rose-pine-gtk-theme-full"
-    # - "sddm-theme-tokyo-night-git"
+    # Themes
+    - "rose-pine-gtk-theme-full"
+    - "sddm-theme-tokyo-night-git"
 
-    # # Fonts
-    # - "noto-fonts"
-    # - "noto-fonts-cjk"
-    # - "noto-fonts-emoji"
-    # - "noto-fonts-extra"
-    # - "ttf-hack-nerd"
-    # - "ttf-noto-nerd"
+    # Fonts
+    - "noto-fonts"
+    - "noto-fonts-cjk"
+    - "noto-fonts-emoji"
+    - "noto-fonts-extra"
+    - "ttf-hack-nerd"
+    - "ttf-noto-nerd"
   flatpaks:
-    # - "com.ticktick.TickTick"
-    # - "md.obsidian.Obsidian"
-    # - "org.gnome.Calculator"
-    # - "org.gnome.Calendar"
-    # - "org.gnome.eog"
+    - "com.ticktick.TickTick"
+    - "md.obsidian.Obsidian"
+    - "org.gnome.Calculator"
+    - "org.gnome.Calendar"
+    - "org.gnome.eog"
