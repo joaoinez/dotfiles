@@ -1,8 +1,8 @@
-#!/bin/bash
-set -euo pipefail
+# #!/bin/bash
+# set -euo pipefail
 
-if ! command -v bun &> /dev/null; then
-  echo "Installing bun"
+# if ! command -v bun &> /dev/null; then
+#   echo "Installing bun"
 
-  curl -fsSL https://bun.sh/install | bash
-fi
+#   curl -fsSL https://bun.sh/install | bash
+# fi

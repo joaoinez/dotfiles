@@ -1,63 +1,63 @@
 linux:
   packages:
-    # System
-    - "linux-zen-headers"
-    ## Dependencies
-    - "libva"
-    ## Shell
-    - "zsh"
-    ## Nvidia
-    - "nvidia-dkms"
-    ## WM
-    - "hyprland-git"
-    ## Greeter
-    - "sddm-git"
-    ## Logout
-    - "wlogout"
-    ## Authentication
-    - "polkit-kde-agent"
-    ## Desktop portals
-    - "xdg-desktop-portal-hyprland-git"
-    - "xdg-desktop-portal-gtk"
-    ## GUI
-    - "qt5ct"
-    - "qt5-wayland"
-    - "qt6ct"
-    - "qt6-wayland"
-    - "nwg-look"
-    ## Audio
-    - "pamixer"
-    ## App launcher
-    - "rofi-lbonn-wayland-git"
-    ## Top bar
-    - "waybar"
-    ## Notifications
-    - "swaync"
-    ## Shell prompt
-    - "starship"
-    ## Wallpapers
-    - "swww"
-    ## Package manager
-    - "flatpak"
+    # # System
+    # - "linux-zen-headers"
+    # ## Dependencies
+    # - "libva"
+    # ## Shell
+    # - "zsh"
+    # ## Nvidia
+    # - "nvidia-dkms"
+    # ## WM
+    # - "hyprland-git"
+    # ## Greeter
+    # - "sddm-git"
+    # ## Logout
+    # - "wlogout"
+    # ## Authentication
+    # - "polkit-kde-agent"
+    # ## Desktop portals
+    # - "xdg-desktop-portal-hyprland-git"
+    # - "xdg-desktop-portal-gtk"
+    # ## GUI
+    # - "qt5ct"
+    # - "qt5-wayland"
+    # - "qt6ct"
+    # - "qt6-wayland"
+    # - "nwg-look"
+    # ## Audio
+    # - "pamixer"
+    # ## App launcher
+    # - "rofi-lbonn-wayland-git"
+    # ## Top bar
+    # - "waybar"
+    # ## Notifications
+    # - "swaync"
+    # ## Shell prompt
+    # - "starship"
+    # ## Wallpapers
+    # - "swww"
+    # ## Package manager
+    # - "flatpak"
 
-    # Utilities
-    - "bat"
-    - "btop"
-    - "cliphist"
-    - "eza"
-    - "fancontrol-gui"
-    - "fzf"
-    - "imagemagick"
-    - "lf"
-    - "man"
-    - "ncdu"
-    - "neofetch"
-    - "unzip"
-    - "zoxide"
-    - "zsh-autosuggestions"
-    - "zsh-syntax-highlighting"
+    # # Utilities
+    # - "bat"
+    # - "btop"
+    # - "cliphist"
+    # - "eza"
+    # - "fancontrol-gui"
+    # - "fzf"
+    # - "imagemagick"
+    # - "lf"
+    # - "man"
+    # - "ncdu"
+    # - "neofetch"
+    # - "unzip"
+    # - "zoxide"
+    # - "zsh-autosuggestions"
+    # - "zsh-syntax-highlighting"
 
-    # Dev
+    # # Dev
     # - "docker"
     # - "docker-compose"
     # - "github-cli"
@@ -68,7 +68,7 @@ linux:
     # - "ollama-cuda"
     # - "tmux"
 
-    # Apps
+    # # Apps
     # - "dolphin"
     # - "firefox"
     # - "chromium"
@@ -77,11 +77,11 @@ linux:
     # - "pavucontrol"
     # - "vesktop"
 
-    # Themes
+    # # Themes
     # - "rose-pine-gtk-theme-full"
     # - "sddm-theme-tokyo-night-git"
 
-    # Fonts
+    # # Fonts
     # - "noto-fonts"
     # - "noto-fonts-cjk"
     # - "noto-fonts-emoji"
@@ -93,4 +93,4 @@ linux:
     # - "md.obsidian.Obsidian"
     # - "org.gnome.Calculator"
     # - "org.gnome.Calendar"
-    - "org.gnome.eog"
+    # - "org.gnome.eog"

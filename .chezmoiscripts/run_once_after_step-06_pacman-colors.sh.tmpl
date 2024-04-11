@@ -1,8 +1,8 @@
-{{ if eq .chezmoi.os "linux" -}}
-#!/bin/bash
-set -euo pipefail
+# {{ if eq .chezmoi.os "linux" -}}
+# #!/bin/bash
+# set -euo pipefail
 
-echo "Enabling pacman colors"
+# echo "Enabling pacman colors"
 
-sudo sed -i 's/#Color/Color/' /etc/pacman.conf
-{{ end -}}
+# sudo sed -i 's/#Color/Color/' /etc/pacman.conf
+# {{ end -}}
