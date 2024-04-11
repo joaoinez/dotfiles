@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-mkdir wallpapers
+mkdir -p wallpapers
 
 for file in *
 do

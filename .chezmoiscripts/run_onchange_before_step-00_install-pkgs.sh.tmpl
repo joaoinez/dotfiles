@@ -13,7 +13,7 @@ fi
 if ! flatpak info {{ . | quote }} &>/dev/null ; then
   echo "Installing flatpak {{ . | quote }}"
 
-  flatpak install -y flathub {{ . | quote }}
+  flatpak install -y flathub {{ . | quote }} &>/dev/null
 fi
 {{ end -}}
 {{ end -}}
