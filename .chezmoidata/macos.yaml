@@ -16,6 +16,7 @@ macos:
     # Utilities
     - "bat"
     - "btop"
+    - "chezmoi"
     - "eza"
     - "fzf"
     - "neofetch"
@@ -29,3 +30,4 @@ macos:
     - "nvm"
     - "ollama"
     - "tmux"
+    - "visual-studio-code"

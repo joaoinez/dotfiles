@@ -1,0 +1,7 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "Installation completed."
+{{ if eq .chezmoi.os "linux" -}}
+echo "You may now reboot."
+{{ end -}}

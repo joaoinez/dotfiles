@@ -1,7 +1,9 @@
-Wallpapers/
-Wallpapers/**
 etc/
 etc/**
+Fonts/
+Fonts/**
+Wallpapers/
+Wallpapers/**
 README.md
 {{- if ne .chezmoi.os "linux" }}
 dot_config/gtk-3.0

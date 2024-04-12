@@ -30,8 +30,32 @@
 curl -fsSL joaoinez.me/arch.sh | bash
 ```
 
-#### Run chezmoi
+---
+
+## MacOS
+
+### Settings
+
+#### Enable `App Exposé`
+
+#### Set `Key repeat rate` to `Fast`
+
+#### Set `Delay until repeat` to one tick before `Short`
+
+#### Enable `Minimise windows into application icon`
+
+#### Enable `Automatically hide and show the Dock`
+
+#### Disable `Show suggested and recent apps in Dock`
+
+#### Enable `Desktop & Documents Folders`
+
+---
+
+### Chezmoi dotfiles
+
+#### Run [macos.sh](https://github.com/JoaoInez/personal-website/blob/main/macos.sh) script
 
 ```shell
-chezmoi init --apply joaoinez
+curl -fsSL joaoinez.me/macos.sh | bash
 ```
