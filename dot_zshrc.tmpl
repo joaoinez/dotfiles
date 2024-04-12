@@ -53,10 +53,12 @@ alias sourcez="source ~/.zshrc"
 {{ if eq .chezmoi.os "linux" -}}
 # AUR
 alias yay="paru"
+# VSCode
+alias code='code --ozone-platform="wayland" --enable-features="WaylandWindowDecorations"'
 {{ end -}}
 
-█▀▄ █ █▀█ █▀▀ █▀▀ ▀█▀ █▀█ █▀█ █ █▀▀ █▀
-█▄▀ █ █▀▄ ██▄ █▄▄ ░█░ █▄█ █▀▄ █ ██▄ ▄█
+# █▀▄ █ █▀█ █▀▀ █▀▀ ▀█▀ █▀█ █▀█ █ █▀▀ █▀
+# █▄▀ █ █▀▄ ██▄ █▄▄ ░█░ █▄█ █▀▄ █ ██▄ ▄█
 export MYSCRIPTS="$HOME/.local/bin"
 export MYVIMRC="$HOME/.config/nvim"
 
