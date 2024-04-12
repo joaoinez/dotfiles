@@ -73,3 +73,13 @@ open . ~/.local/share/chezmoi/Fonts
 ```shell
 curl -fsSL joaoinez.me/macos.sh | bash
 ```
+
+---
+
+## Windows
+
+### Apps script
+
+```ps1
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://joaoinez.me/windows.ps1'))
+```
