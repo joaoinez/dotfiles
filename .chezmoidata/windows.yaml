@@ -2,11 +2,7 @@ windows:
   apps:
     - "Alacritty.Alacritty"
     - "Discord.Discord"
-    - "GitHub.cli"
-    - "glzr-io.glazewm"
     - "Microsoft.PowerToys"
     - "Microsoft.VisualStudioCode"
-    - "NirSoft.NirCmd"
-    - "OliverSchwendener.ueli"
     - "TheBrowserCompany.Arc"
     - "Valve.Steam"
