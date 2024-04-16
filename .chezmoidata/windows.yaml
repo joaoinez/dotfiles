@@ -10,4 +10,4 @@ windows:
     - "TheBrowserCompany.Arc"
     - "Valve.Steam"
   sudos:
-    - "glzr-io.glazewm --location 'C:\Program Files\GlazeWM'"
+    - glzr-io.glazewm --location 'C:\Program Files\GlazeWM'
