@@ -25,7 +25,7 @@ dot_config/wlogout/**
 dot_config/kdeglobals
 dot_config/private_mimeapps.list
 private_dot_local/bin/change_wallpaper.sh
-{{- else if eq .chezmoi.os "windows" }}
+{{- if eq .chezmoi.os "windows" }}
 dot_config/
 dot_config/**
 private_dot_local/
