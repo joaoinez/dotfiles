@@ -15,7 +15,8 @@ linux:
     ## Logout
     - "wlogout"
     ## Authentication
-    - "polkit-kde-agent"
+    # - "polkit-kde-agent"
+    - "pokit-gnome-agent"
     ## Desktop portals
     - "xdg-desktop-portal-hyprland-git"
     - "xdg-desktop-portal-gtk"
@@ -47,6 +48,7 @@ linux:
     - "eza"
     - "fancontrol-gui"
     - "fzf"
+    - "gparted"
     - "imagemagick"
     - "lf"
     - "man"
