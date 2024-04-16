@@ -27,7 +27,7 @@
 #### Run [arch.sh](https://github.com/JoaoInez/personal-website/blob/main/arch.sh) script
 
 ```shell
-curl -fsSL joaoinez.me/arch.sh | bash
+curl -fsSL joaoinez.me/arch.sh | sh
 ```
 
 ---
@@ -71,14 +71,14 @@ open . ~/.local/share/chezmoi/Fonts
 #### Run [macos.sh](https://github.com/JoaoInez/personal-website/blob/main/macos.sh) script
 
 ```shell
-curl -fsSL joaoinez.me/macos.sh | bash
+curl -fsSL joaoinez.me/macos.sh | sh
 ```
 
 ---
 
 ## Windows
 
-### Apps script
+### Chezmoi dotfiles
 
 ```ps1
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://joaoinez.me/windows.ps1'))

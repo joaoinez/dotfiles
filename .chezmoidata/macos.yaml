@@ -12,11 +12,11 @@ macos:
     - "spotify"
     - "ticktick"
     - "whatsapp"
+    - "zed"
   brews:
     # Utilities
     - "bat"
     - "btop"
-    - "chezmoi"
     - "eza"
     - "fzf"
     - "neofetch"
