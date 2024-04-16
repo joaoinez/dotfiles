@@ -53,6 +53,8 @@ alias sourcez="source ~/.zshrc"
 {{ if eq .chezmoi.os "linux" -}}
 # AUR
 alias yay="paru"
+# Vencord CLI
+alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 # VSCode
 alias code='code --ozone-platform="wayland" --enable-features="WaylandWindowDecorations"'
 {{ end -}}
