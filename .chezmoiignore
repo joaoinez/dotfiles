@@ -14,6 +14,8 @@ dot_config/paru/
 dot_config/paru/**
 dot_config/rofi/
 dot_config/rofi/**
+dot_config/swaync/
+dot_config/swaync/**
 dot_config/waybar/
 dot_config/waybar/**
 dot_config/wlogout/
