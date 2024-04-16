@@ -16,7 +16,7 @@ linux:
     - "wlogout"
     ## Authentication
     # - "polkit-kde-agent"
-    - "polkit-gnome-agent"
+    - "polkit-gnome"
     ## Desktop portals
     - "xdg-desktop-portal-hyprland-git"
     - "xdg-desktop-portal-gtk"
