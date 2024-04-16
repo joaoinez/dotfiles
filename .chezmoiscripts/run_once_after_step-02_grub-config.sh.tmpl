@@ -1,0 +1,11 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+set -euo pipefail
+
+echo "Applying GRUB theme"
+
+sudo cp /etc/default/grub /etc/default/grub.bak
+sudo rm /etc/default/grub
+
+sudo cp ~/.local/share/chezmoi/etc/default/grub /etc/default/grub
+{{ end -}}
