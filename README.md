@@ -121,36 +121,4 @@ chezmoi init --apply joaoinez
 
 ---
 
-### Add GlazeWM to startup
-
-#### Open startup folder
-
-`Win + R` > `shell:startup`
-
-#### Add GlazeWM (`%localappdata%\microsoft\winget\packages`) shortcut to startup folder
-
----
-
-### Hide taskbar
-
-#### Enable `Automatically hide the taskbar`
-
-#### Run NirCmd
-
-```ps1
-gsudo nircmd
-```
-
-#### Hide taskbar with `nircmd` command
-
-```ps1
-gsudo nircmd win trans class Shell_TrayWnd 256
-```
-
----
-
-### Change `ueli` `Hot Key` to `Ctrl + Shift + Space`
-
----
-
 ### Install [Vencord](https://vencord.dev/download/)
