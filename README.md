@@ -8,7 +8,12 @@
 ░▒▓██▓▒░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░  ░▒▓██▓▒░  ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░
 ```
 
-## Arch
+---
+
+```
+▄▀█ █▀█ █▀▀ █░█
+█▀█ █▀▄ █▄▄ █▀█
+```
 
 ### Arch Installation
 
@@ -32,7 +37,10 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 ---
 
-## MacOS
+```
+█▀▄▀█ ▄▀█ █▀▀ █▀█ █▀
+█░▀░█ █▀█ █▄▄ █▄█ ▄█
+```
 
 ### Settings
 
@@ -74,11 +82,16 @@ open . ~/.local/share/chezmoi/Fonts
 
 #### Drag and drop fonts
 
-#### Install [Vencord](https://vencord.dev/download/)
+---
+
+### Install [Vencord](https://vencord.dev/download/)
 
 ---
 
-## Windows
+```
+█░█░█ █ █▄░█ █▀▄ █▀█ █░█░█ █▀
+▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀ ▄█
+```
 
 ### Chezmoi dotfiles
 
@@ -100,6 +113,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 chezmoi init --apply joaoinez
 ```
 
+---
+
 ### Add GlazeWM to startup
 
 #### Open startup folder
@@ -107,6 +122,8 @@ chezmoi init --apply joaoinez
 `Win + R` > `shell:startup`
 
 #### Add GlazeWM shortcut to startup folder
+
+---
 
 ### Hide taskbar
 
@@ -118,6 +135,10 @@ chezmoi init --apply joaoinez
 gsudo nircmd win trans class Shell_TrayWnd 256
 ```
 
+---
+
 ### Change `ueli` `Hot Key` to `Ctrl + Shift + Space`
+
+---
 
 ### Install [Vencord](https://vencord.dev/download/)
