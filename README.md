@@ -52,6 +52,16 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 ---
 
+### Chezmoi dotfiles
+
+#### Run [macos.sh](https://github.com/JoaoInez/personal-website/blob/main/macos.sh) script
+
+```shell
+curl -fsSL joaoinez.me/macos.sh | sh
+```
+
+---
+
 ### Fonts Installation
 
 #### Open `Fonts` folder
@@ -63,16 +73,6 @@ open . ~/.local/share/chezmoi/Fonts
 #### Open `FontBook`
 
 #### Drag and drop fonts
-
----
-
-### Chezmoi dotfiles
-
-#### Run [macos.sh](https://github.com/JoaoInez/personal-website/blob/main/macos.sh) script
-
-```shell
-curl -fsSL joaoinez.me/macos.sh | sh
-```
 
 ---
 
