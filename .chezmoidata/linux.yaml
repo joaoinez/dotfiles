@@ -54,6 +54,7 @@ linux:
     - "man"
     - "ncdu"
     - "neofetch"
+    - "os-prober"
     - "unzip"
     - "zoxide"
     - "zsh-autosuggestions"
@@ -77,7 +78,7 @@ linux:
     - "steam"
     - "openrgb"
     - "pavucontrol"
-    - "vesktop"
+    # - "vesktop"
 
     # Themes
     - "rose-pine-gtk-theme-full"
@@ -91,6 +92,7 @@ linux:
     - "ttf-hack-nerd"
     - "ttf-noto-nerd"
   flatpaks:
+    - "com.discordapp.Discord"
     - "com.ticktick.TickTick"
     - "md.obsidian.Obsidian"
     - "org.gnome.Calculator"
