@@ -8,7 +8,7 @@ if [ ! -d /boot/grub/themes ]; then
   sudo mkdir -p /boot/grub/themes
 fi
 
-sudo cp ~/.local/share/chezmoi/boot/grub2/themes/bigsur /boot/grub/themes
+sudo cp -r ~/.local/share/chezmoi/boot/grub2/themes/bigsur /boot/grub/themes
 
 sudo cp /etc/default/grub /etc/default/grub.bak
 sudo rm /etc/default/grub
