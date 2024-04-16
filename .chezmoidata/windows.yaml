@@ -1,17 +1,10 @@
 windows:
   apps:
     - "Alacritty.Alacritty"
-    - "Chocolatey.Chocolatey"
+    # - "Chocolatey.Chocolatey"
     - "Discord.Discord"
-    - "glzr-io.glazewm"
     - "Microsoft.PowerToys"
     - "Microsoft.VisualStudioCode"
     - "OliverSchwendener.ueli"
-    - "RiotGames.LeagueOfLegends.EUW"
     - "TheBrowserCompany.Arc"
     - "Valve.Steam"
-    - "Vendicated.Vencord.PTB"
-  chocos:
-    - "neovim"
-    - "oh-my-posh"
-    - "starship"

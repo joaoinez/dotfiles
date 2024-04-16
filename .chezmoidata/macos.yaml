@@ -1,14 +1,13 @@
 macos:
   casks:
     - "arc"
-    - "balenaetcher"
+    - "discord"
     - "docker"
     - "figma"
     - "kitty"
     - "maccy"
     - "notion"
     - "obsidian"
-    - "qbittorrent"
     - "spotify"
     - "ticktick"
     - "whatsapp"

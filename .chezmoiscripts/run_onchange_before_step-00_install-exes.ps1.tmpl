@@ -1,8 +1,8 @@
 {{ if eq .chezmoi.os "windows" -}}
 {{ range .windows.apps -}}
-winget install --id={{ . | quote }}
+winget install --id {{ . | quote }}
 {{ end -}}
-{{ range .windows.chocos -}}
-choco install {{ . | quote }} -y
-{{ end -}}
+# {{ range .windows.chocos -}}
+# choco install {{ . | quote }} -y
+# {{ end -}}
 {{ end -}}

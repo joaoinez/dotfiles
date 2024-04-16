@@ -74,14 +74,30 @@ open . ~/.local/share/chezmoi/Fonts
 
 #### Drag and drop fonts
 
+#### Install [Vencord](https://vencord.dev/download/)
+
 ---
 
 ## Windows
 
 ### Chezmoi dotfiles
 
+#### Change script `Execution Policy`
+
+```ps1
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
 #### Run [windows.ps1](https://github.com/JoaoInez/personal-website/blob/main/windows.ps1) script
 
 ```ps1
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://joaoinez.me/windows.ps1'))
 ```
+
+#### Open a new shell and initialize `chezmoi`
+
+```ps1
+chezmoi init --apply joaoinez
+```
+
+#### Install [Vencord](https://vencord.dev/download/)
