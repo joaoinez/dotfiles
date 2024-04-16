@@ -84,6 +84,15 @@ window#waybar.empty #window {
   border-radius: 4px;
 }
 
+#wireplumber {
+  background-color: @surface;
+  padding: 0.25em 0.75em;
+  margin: 0.5em 0;
+  margin-right: 0.5em;
+  border-radius: 4px;
+  color: @iris;
+}
+
 #network {
   background-color: @surface;
   padding: 0.25em 0.75em;
@@ -93,13 +102,13 @@ window#waybar.empty #window {
   color: @text;
 }
 
-#wireplumber {
+#custom-swaync {
   background-color: @surface;
   padding: 0.25em 0.75em;
   margin: 0.5em 0;
   margin-right: 0.5em;
   border-radius: 4px;
-  color: @iris;
+  color: @gold;
 }
 
 #custom-wlogout {
