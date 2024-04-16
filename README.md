@@ -121,7 +121,7 @@ chezmoi init --apply joaoinez
 
 `Win + R` > `shell:startup`
 
-#### Add GlazeWM shortcut to startup folder
+#### Add GlazeWM (`%localappdata%\microsoft\winget\packages`) shortcut to startup folder
 
 ---
 
@@ -130,6 +130,12 @@ chezmoi init --apply joaoinez
 #### Enable `Automatically hide the taskbar`
 
 #### Run NirCmd
+
+```ps1
+gsudo nircmd
+```
+
+#### Hide taskbar with `nircmd` command
 
 ```ps1
 gsudo nircmd win trans class Shell_TrayWnd 256
