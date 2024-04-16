@@ -118,4 +118,6 @@ chezmoi init --apply joaoinez
 gsudo nircmd win trans class Shell_TrayWnd 256
 ```
 
+### Change `ueli` `Hot Key` to `Ctrl + Shift + Space`
+
 ### Install [Vencord](https://vencord.dev/download/)
