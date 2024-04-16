@@ -3,11 +3,10 @@ windows:
     - "Alacritty.Alacritty"
     - "Discord.Discord"
     - "GitHub.cli"
+    - "glzr-io.glazewm"
     - "Microsoft.PowerToys"
     - "Microsoft.VisualStudioCode"
     - "NirSoft.NirCmd"
     - "OliverSchwendener.ueli"
     - "TheBrowserCompany.Arc"
     - "Valve.Steam"
-  sudos:
-    - glzr-io.glazewm --location 'C:\Program Files\GlazeWM'

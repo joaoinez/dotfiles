@@ -2,7 +2,4 @@
 {{ range .windows.apps -}}
 winget install --id {{ . | quote }}
 {{ end -}}
-{{ range .windows.sudos -}}
-gsudo winget install --id {{ . | quote }}
-{{ end -}}
 {{ end -}}
