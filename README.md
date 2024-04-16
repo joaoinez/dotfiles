@@ -94,10 +94,28 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://joaoinez.me/windows.ps1'))
 ```
 
-#### Open a new shell and initialize `chezmoi`
+#### Initialize `chezmoi`
 
 ```ps1
 chezmoi init --apply joaoinez
 ```
 
-#### Install [Vencord](https://vencord.dev/download/)
+### Add GlazeWM to startup
+
+#### Open startup folder
+
+`Win + R` > `shell:startup`
+
+#### Add GlazeWM shortcut to startup folder
+
+### Hide taskbar
+
+#### Enable `Automatically hide the taskbar`
+
+#### Run NirCmd
+
+```ps1
+gsudo nircmd win trans class Shell_TrayWnd 256
+```
+
+### Install [Vencord](https://vencord.dev/download/)

@@ -2,6 +2,9 @@
 {{ range .windows.apps -}}
 winget install --id {{ . | quote }}
 {{ end -}}
+{{ range .windows.sudos -}}
+gsudo winget install --id {{ . | quote }}
+{{ end -}}
 # {{ range .windows.chocos -}}
 # choco install {{ . | quote }} -y
 # {{ end -}}
