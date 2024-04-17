@@ -1,8 +1,6 @@
 windows:
   apps:
-    - "Alacritty.Alacritty"
     - "Discord.Discord"
     - "Microsoft.PowerToys"
-    - "Microsoft.VisualStudioCode"
     - "TheBrowserCompany.Arc"
     - "Valve.Steam"
