@@ -10,6 +10,7 @@ macos:
     - "obsidian"
     - "spotify"
     - "ticktick"
+    - "visual-studio-code"
     - "whatsapp"
     - "zed"
   brews:
