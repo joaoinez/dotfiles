@@ -21,8 +21,9 @@ macos:
     - "fzf"
     - "neofetch"
     - "starship"
-    - "wget"
     - "zoxide"
+    - "zsh-autosuggestions"
+    - "zsh-syntax-highlighting"
 
     # Dev
     - "docker-compose"
