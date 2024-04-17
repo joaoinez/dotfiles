@@ -2,8 +2,7 @@
 #!/bin/bash
 set -euo pipefail
 
-if [ ! -d "${XDG_CONFIG_HOME:-$HOME/.config}" ]; then
-	git clone https://github.com/joaoinez/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+if [ ! -d ~/.config/nvim ]; then
+	git clone https://github.com/joaoinez/kickstart.nvim.git ~/.config/nvim
 fi
-
 {{ end -}}

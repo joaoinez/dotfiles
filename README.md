@@ -66,6 +66,18 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 ---
 
+### Install `git`
+
+```shell
+git --version
+```
+
+### Install `homebrew`
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 ### Chezmoi dotfiles
 
 #### Run [macos.sh](https://github.com/JoaoInez/personal-website/blob/main/macos.sh) script
@@ -75,6 +87,12 @@ curl -fsSL joaoinez.me/macos.sh | sh
 ```
 
 ---
+
+### Check diffs
+
+```shell
+chezmoi diff
+```
 
 ### Fonts Installation
 
