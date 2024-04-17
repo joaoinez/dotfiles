@@ -62,6 +62,8 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 #### Enable `Desktop & Documents Folders`
 
+#### Disable `Automatically rearrange Spaces based on most recent use`
+
 ---
 
 ### Chezmoi dotfiles
