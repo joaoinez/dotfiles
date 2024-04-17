@@ -19,6 +19,7 @@ macos:
     - "eza"
     - "fzf"
     - "neofetch"
+    - "starship"
     - "wget"
     - "zoxide"
 
