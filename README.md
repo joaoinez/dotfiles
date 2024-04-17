@@ -44,6 +44,8 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 ### Settings
 
+#### Set `Click wallpaper to reveal desktop` to `Only in Stage Manager`
+
 #### Enable `App Exposé`
 
 #### Set `Key repeat rate` to `Fast`
