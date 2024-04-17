@@ -15,7 +15,6 @@ linux:
     ## Logout
     - "wlogout"
     ## Authentication
-    # - "polkit-kde-agent"
     - "polkit-gnome"
     ## Desktop portals
     - "xdg-desktop-portal-hyprland-git"
@@ -70,6 +69,7 @@ linux:
     - "nvm"
     - "ollama-cuda"
     - "tmux"
+    - "visual-studio-code-bin"
 
     # Apps
     - "dolphin"
@@ -78,7 +78,6 @@ linux:
     - "steam"
     - "openrgb"
     - "pavucontrol"
-    # - "vesktop"
 
     # Themes
     - "rose-pine-gtk-theme-full"
