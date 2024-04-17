@@ -50,6 +50,12 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 ---
 
+##### `Control Center`
+
+#### `Battery` -> Enable `Show Percentage`
+
+---
+
 ##### `Desktop & Dock`
 
 #### `Dock` -> Enable `Minimise windows into application icon`
@@ -117,7 +123,7 @@ chezmoi diff
 #### Open `Fonts` folder
 
 ```shell
-open . ~/.local/share/chezmoi/Fonts
+open ~/.local/share/chezmoi/Fonts
 ```
 
 #### Open `FontBook`
