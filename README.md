@@ -44,25 +44,43 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 ### Settings
 
-#### Set `Click wallpaper to reveal desktop` to `Only in Stage Manager`
+##### `Apple ID`
+
+#### `iCloud Drive` -> Enable `Desktop & Documents Folders`
+
+---
+
+##### `Desktop & Dock`
+
+#### `Dock` -> Enable `Minimise windows into application icon`
+
+#### `Dock` -> Enable `Automatically hide and show the Dock`
+
+#### `Dock` -> Disable `Show suggested and recent apps in Dock`
+
+#### `Desktop & Stage Manager` -> Set `Click wallpaper to reveal desktop` to `Only in Stage Manager`
+
+#### `Mission Control` -> Disable `Automatically rearrange Spaces based on most recent use`
+
+---
+
+##### `Displays` 
 
 #### Set display resolution to `More space`
 
-#### Enable `App Exposé`
+---
+
+##### `Keyboard`
 
 #### Set `Key repeat rate` to `Fast`
 
 #### Set `Delay until repeat` to one tick before `Short`
 
-#### Enable `Minimise windows into application icon`
+---
 
-#### Enable `Automatically hide and show the Dock`
+##### `Trackpad`
 
-#### Disable `Show suggested and recent apps in Dock`
-
-#### Enable `Desktop & Documents Folders`
-
-#### Disable `Automatically rearrange Spaces based on most recent use`
+####  `More Gestures` -> Set `App Exposé` to `Swipe Down with Three Fingers`
 
 ---
 
