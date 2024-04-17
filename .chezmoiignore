@@ -8,6 +8,8 @@ Wallpapers/
 Wallpapers/**
 README.md
 {{- if eq .chezmoi.os "darwin" }}
+.config/yabai/yabairc
+{{- else if eq .chezmoi.os "darwin" }}
 .config/gtk-3.0
 .config/gtk-3.0/**
 .config/hypr/

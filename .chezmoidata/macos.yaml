@@ -18,6 +18,8 @@ macos:
     - "bat"
     - "btop"
     - "eza"
+    - "koekeishiya/formulae/skhd"
+    - "koekeishiya/formulae/yabai"
     - "fzf"
     - "neofetch"
     - "starship"
