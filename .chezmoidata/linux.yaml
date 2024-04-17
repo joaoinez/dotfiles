@@ -4,6 +4,7 @@ linux:
     - "linux-zen-headers"
     ## Dependencies
     - "libva"
+    - "unzip"
     ## Shell
     - "zsh"
     ## Nvidia
@@ -54,7 +55,6 @@ linux:
     - "ncdu"
     - "neofetch"
     - "os-prober"
-    - "unzip"
     - "zoxide"
     - "zsh-autosuggestions"
     - "zsh-syntax-highlighting"
