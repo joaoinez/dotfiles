@@ -29,4 +29,3 @@ macos:
     - "nvm"
     - "ollama"
     - "tmux"
-    - "visual-studio-code"
