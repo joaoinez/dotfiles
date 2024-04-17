@@ -2,5 +2,6 @@ windows:
   apps:
     - "Discord.Discord"
     - "Microsoft.PowerToys"
+    - "Microsoft.VisualStudioCode"
     - "TheBrowserCompany.Arc"
     - "Valve.Steam"
