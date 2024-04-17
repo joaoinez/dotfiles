@@ -25,6 +25,7 @@ README.md
 .config/kdeglobals
 .config/mimeapps.list
 .local/bin/change_wallpaper.sh
+{{- end }}
 {{- if eq .chezmoi.os "windows" }}
 .config/
 .config/**
@@ -33,4 +34,3 @@ README.md
 .gitconfig
 .zshrc
 {{- end }}
-
