@@ -3,6 +3,7 @@ macos:
     - "homebrew/cask-fonts"
     - "koekeishiya/formulae"
     - "FelixKratz/formulae"
+    - "shaunsingh/SFMono-Nerd-Font-Ligaturized"
   casks:
     - "arc"
     - "discord"
@@ -10,6 +11,7 @@ macos:
     - "figma"
     - "font-hack"
     - "font-hack-nerd-font"
+    - "font-sf-mono-nerd-font-ligaturized"
     - "kitty"
     - "maccy"
     - "notion"

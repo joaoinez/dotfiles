@@ -22,8 +22,8 @@ sketchybar --bar position=top height=42 blur_radius=30 color=0x40000000
 default=(
   padding_left=0
   padding_right=0
-  icon.font="Hack Nerd Font:Bold:13.0"
-  label.font="Hack Nerd Font:Regular:13.0"
+  icon.font="Liga SFMono Nerd Font:Bold:13.0"
+  label.font="Liga SFMono Nerd Font:Regular:13.0"
   icon.color=0xffffffff
   label.color=0xffffffff
   icon.padding_left=4
