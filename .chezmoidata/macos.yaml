@@ -16,6 +16,7 @@ macos:
     - "maccy"
     - "notion"
     - "obsidian"
+    - "raycast"
     - "spotify"
     - "ticktick"
     - "visual-studio-code"
