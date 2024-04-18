@@ -1,0 +1,8 @@
+{{ if (or (eq .chezmoi.os "linux") (eq .chezmoi.os "darwin")) -}}
+#!/bin/bash
+set -euo pipefail
+
+if [ ! -d ~/emerald ]; then
+	git clone https://github.com/joaoinez/emerald.git ~/emerald
+fi
+{{ end -}}

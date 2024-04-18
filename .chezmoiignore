@@ -16,6 +16,10 @@ README.md
 .config/hypr/**
 .config/paru/
 .config/paru/**
+.config/qt5ct/
+.config/qt5ct/**
+.config/qt6ct/
+.config/qt6ct/**
 .config/rofi/
 .config/rofi/**
 .config/swaync/
