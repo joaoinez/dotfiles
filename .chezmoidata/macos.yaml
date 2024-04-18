@@ -35,6 +35,7 @@ macos:
     - "yabai"
     - "sketchybar"
     - "fzf"
+    - "lf"
     - "neofetch"
     - "starship"
     - "zoxide"
