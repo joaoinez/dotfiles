@@ -62,7 +62,7 @@ chezmoi diff
 
 #### `Battery` -> Enable `Show Percentage`
 
-#### `Menu Bar Only` -> Set `Automatically hide and ashow the menu bar` to `Always`
+#### `Menu Bar Only` -> Set `Automatically hide and show the menu bar` to `Always`
 
 ---
 
