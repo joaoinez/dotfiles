@@ -6,7 +6,10 @@ Wallpapers/
 Wallpapers/**
 README.md
 {{- if eq .chezmoi.os "linux" }}
-.config/yabai/yabairc
+.config/yabai/
+.config/yabai/**
+.config/skhd/
+.config/skhd/**
 .config/sketchybar/
 .config/sketchybar/**
 {{- else if eq .chezmoi.os "darwin" }}
