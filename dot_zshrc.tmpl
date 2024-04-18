@@ -48,14 +48,14 @@ alias .verify="chezmoi verify"
 alias .push="sh ~/.local/bin/push_dotfiles.sh"
 # Source .zshrc
 alias sourcez="source ~/.zshrc"
-{{ if eq .chezmoi.os "linux" -}}
+{{- if eq .chezmoi.os "linux" }}
 # AUR
 alias yay="paru"
 # Vencord CLI
 alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 # VSCode
 alias code='code --ozone-platform="wayland" --enable-features="WaylandWindowDecorations"'
-{{ end -}}
+{{- end }}
 
 # █▀▄ █ █▀█ █▀▀ █▀▀ ▀█▀ █▀█ █▀█ █ █▀▀ █▀
 # █▄▀ █ █▀▄ ██▄ █▄▄ ░█░ █▄█ █▀▄ █ ██▄ ▄█
@@ -72,9 +72,6 @@ SAVEHIST=1000
 # █▄█ █▀▀ ░█░ █ █▄█ █░▀█ ▄█
 setopt beep extendedglob nomatch
 unsetopt autocd notify
-
-# █▄▀ █▀▀ █▄█ █▄▄ █ █▄░█ █▀▄ █ █▄░█ █▀▀ █▀
-# █░█ ██▄ ░█░ █▄█ █ █░▀█ █▄▀ █ █░▀█ █▄█ ▄█
 bindkey -v
 
 # █▀▄ █▀▀ █▀▀ ▄▀█ █░█ █░░ ▀█▀   █▀▀ █▀▄ █ ▀█▀ █▀█ █▀█
@@ -84,6 +81,16 @@ export EDITOR="nvim"
 # ▀█ █▀█ ▀▄▀ █ █▀▄ █▀▀
 # █▄ █▄█ █░█ █ █▄▀ ██▄
 eval "$(zoxide init zsh --cmd cd)"
+
+# █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█   █▀ █▀▀ ▄▀█ █▀█ █▀▀ █░█
+# █▀█ █ ▄█ ░█░ █▄█ █▀▄ ░█░   ▄█ ██▄ █▀█ █▀▄ █▄▄ █▀█
+autoload -U history-search-end
+
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
 
 # █▀▀ █▀█ █▀▄▀█ █▀█ █░░ █▀▀ ▀█▀ █ █▀█ █▄░█
 # █▄▄ █▄█ █░▀░█ █▀▀ █▄▄ ██▄ ░█░ █ █▄█ █░▀█
@@ -105,14 +112,12 @@ source /usr/share/nvm/init-nvm.sh
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-{{ end -}}
+{{- end }}
 
 # █▄▄ █░█ █▄░█
 # █▄█ █▄█ █░▀█
 {{ if eq .chezmoi.os "linux" -}}
 [ -s "/home/astherae/.bun/_bun" ] && source "/home/astherae/.bun/_bun"
-{{ else if eq .chezmoi.os "darwin" -}}
-[ -s "/Users/joaoinez/.bun/_bun" ] && source "/Users/joaoinez/.bun/_bun"
 {{ end -}}
 
 export BUN_INSTALL="$HOME/.bun"
