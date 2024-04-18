@@ -38,6 +38,8 @@ linux:
     - "starship"
     ## Wallpapers
     - "swww"
+    ## Cursors
+    - "rose-pine-cursor"
     ## Package manager
     - "flatpak"
 
