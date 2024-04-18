@@ -37,6 +37,14 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 ---
 
+### Check diffs
+
+```shell
+chezmoi apply
+```
+
+---
+
 ```
 █▀▄▀█ ▄▀█ █▀▀ █▀█ █▀
 █░▀░█ █▀█ █▄▄ █▄█ ▄█
@@ -117,7 +125,7 @@ curl -fsSL joaoinez.me/macos.sh | sh
 ### Check diffs
 
 ```shell
-chezmoi diff
+chezmoi apply
 ```
 
 ---
@@ -151,4 +159,12 @@ gsudo winget settings --enable InstallerHashOverride
 
 ```ps1
 chezmoi init --apply joaoinez
+```
+
+---
+
+### Check diffs
+
+```shell
+chezmoi apply
 ```
