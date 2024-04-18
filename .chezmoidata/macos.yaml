@@ -3,15 +3,14 @@ macos:
     - "homebrew/cask-fonts"
     - "koekeishiya/formulae"
     - "FelixKratz/formulae"
-    - "shaunsingh/SFMono-Nerd-Font-Ligaturized"
   casks:
+    # Apps
     - "arc"
     - "discord"
     - "docker"
     - "figma"
-    - "font-hack"
-    - "font-hack-nerd-font"
-    - "font-sf-mono-nerd-font-ligaturized"
+    - "firefox"
+    - "google-chrome"
     - "kitty"
     - "maccy"
     - "notion"
@@ -22,6 +21,11 @@ macos:
     - "visual-studio-code"
     - "whatsapp"
     - "zed"
+
+    # Fonts
+    - "font-hack"
+    - "font-hack-nerd-font"
+    - "sf-symbols"
   brews:
     # Utilities
     - "bat"

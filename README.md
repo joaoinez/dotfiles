@@ -40,7 +40,7 @@ curl -fsSL joaoinez.me/arch.sh | sh
 ### Check diffs
 
 ```shell
-chezmoi apply
+chezmoi diff
 ```
 
 ---
@@ -125,7 +125,7 @@ curl -fsSL joaoinez.me/macos.sh | sh
 ### Check diffs
 
 ```shell
-chezmoi apply
+chezmoi diff
 ```
 
 ---
@@ -166,5 +166,5 @@ chezmoi init --apply joaoinez
 ### Check diffs
 
 ```shell
-chezmoi apply
+chezmoi diff
 ```
