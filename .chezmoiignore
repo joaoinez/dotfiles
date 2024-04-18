@@ -7,6 +7,8 @@ Wallpapers/**
 README.md
 {{- if eq .chezmoi.os "linux" }}
 .config/yabai/yabairc
+.config/sketchybar/
+.config/sketchybar/**
 {{- else if eq .chezmoi.os "darwin" }}
 .config/gtk-3.0
 .config/gtk-3.0/**
