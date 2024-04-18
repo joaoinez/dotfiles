@@ -54,6 +54,8 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 #### `Battery` -> Enable `Show Percentage`
 
+#### `Menu Bar Only` -> Set `Automatically hide and ashow the menu bar` to `Always`
+
 ---
 
 ##### `Desktop & Dock`
@@ -118,22 +120,6 @@ curl -fsSL joaoinez.me/macos.sh | sh
 chezmoi diff
 ```
 
-### Fonts Installation
-
-#### Open `Fonts` folder
-
-```shell
-open ~/.local/share/chezmoi/Fonts
-```
-
-#### Open `FontBook`
-
-#### Drag and drop fonts
-
----
-
-### Install [Vencord](https://vencord.dev/download/)
-
 ---
 
 ```
@@ -166,7 +152,3 @@ gsudo winget settings --enable InstallerHashOverride
 ```ps1
 chezmoi init --apply joaoinez
 ```
-
----
-
-### Install [Vencord](https://vencord.dev/download/)
