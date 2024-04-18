@@ -1,9 +1,15 @@
 macos:
+  taps:
+    - "homebrew/cask-fonts"
+    - "koekeishiya/formulae"
+    - "FelixKratz/formulae"
   casks:
     - "arc"
     - "discord"
     - "docker"
     - "figma"
+    - "font-hack"
+    - "font-hack-nerd-font"
     - "kitty"
     - "maccy"
     - "notion"
@@ -18,8 +24,9 @@ macos:
     - "bat"
     - "btop"
     - "eza"
-    - "koekeishiya/formulae/skhd"
-    - "koekeishiya/formulae/yabai"
+    - "skhd"
+    - "yabai"
+    - "sketchybar"
     - "fzf"
     - "neofetch"
     - "starship"

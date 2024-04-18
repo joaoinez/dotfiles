@@ -4,6 +4,9 @@ set -euo pipefail
 
 echo "Installing brews and casks"
 
+{{ range .macos.taps -}}
+brew tap {{ . | quote }}
+{{ end -}}
 brew bundle --no-lock --file=/dev/stdin <<EOF
 {{ range .macos.brews -}}
 brew {{ . | quote }}
