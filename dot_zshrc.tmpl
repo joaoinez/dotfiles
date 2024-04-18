@@ -101,6 +101,8 @@ zstyle :compinstall filename '${HOME}/.zshrc'
 autoload -Uz compinit
 compinit
 
+eval "$(fzf --zsh)"
+
 # █▀ ▀█▀ ▄▀█ █▀█ █▀ █░█ █ █▀█
 # ▄█ ░█░ █▀█ █▀▄ ▄█ █▀█ █ █▀▀
 eval "$(starship init zsh)"
