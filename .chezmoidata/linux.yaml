@@ -4,6 +4,7 @@ linux:
     - "linux-zen-headers"
     ## Dependencies
     - "libva"
+    - "ripgrep"
     - "unzip"
     ## Shell
     - "zsh"
