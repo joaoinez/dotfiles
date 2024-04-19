@@ -5,6 +5,7 @@ macos:
     - "FelixKratz/formulae"
   casks:
     # Apps
+    - "alacritty"
     - "arc"
     - "discord"
     - "docker"
@@ -37,6 +38,7 @@ macos:
     - "fzf"
     - "lf"
     - "neofetch"
+    - "ripgrep"
     - "starship"
     - "zoxide"
     - "zsh-autosuggestions"
