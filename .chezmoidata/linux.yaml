@@ -68,6 +68,7 @@ linux:
     - "docker-compose"
     - "github-cli"
     - "kitty"
+    - "lazygit"
     - "neovim"
     - "nvidia-container-toolkit"
     - "nvm"

@@ -47,6 +47,7 @@ macos:
     # Dev
     - "docker-compose"
     - "gh"
+    - "lazygit"
     - "neovim"
     - "nvm"
     - "ollama"
