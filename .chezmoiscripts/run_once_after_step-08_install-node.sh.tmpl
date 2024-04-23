@@ -3,8 +3,8 @@
 set -euo pipefail
 
 if [[ $(zsh -c "source ~/.zshrc && nvm version") == "none" ]]; then
-echo "Installing node"
+  echo "Installing node"
 
-zsh -c 'source ~/.zshrc && nvm install node' &>/dev/null
+  zsh -c 'source ~/.zshrc && nvm install node' &>/dev/null
 fi
 {{ end -}}

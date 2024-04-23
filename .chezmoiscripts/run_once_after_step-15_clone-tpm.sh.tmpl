@@ -1,0 +1,10 @@
+{{ if (or (eq .chezmoi.os "linux") (eq .chezmoi.os "darwin")) -}}
+#!/bin/bash
+set -euo pipefail
+
+if [ ! ~/.tmux/plugins/tpm ]; then
+	echo "Cloning TPM"
+
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+{{ end -}}

@@ -3,6 +3,8 @@
 set -euo pipefail
 
 if [ ! -d ~/emerald ]; then
+	echo "Cloning obsidian vault"
+
 	git clone https://github.com/joaoinez/emerald.git ~/emerald
 fi
 {{ end -}}
