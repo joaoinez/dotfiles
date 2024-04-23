@@ -59,6 +59,7 @@ linux:
     - "ncdu"
     - "neofetch"
     - "os-prober"
+    - "tldr"
     - "zoxide"
     - "zsh-autosuggestions"
     - "zsh-syntax-highlighting"

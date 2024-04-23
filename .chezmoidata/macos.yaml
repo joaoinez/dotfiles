@@ -38,6 +38,7 @@ macos:
     - "fzf"
     - "lf"
     - "neofetch"
+    - "tldr"
     - "ripgrep"
     - "starship"
     - "zoxide"
