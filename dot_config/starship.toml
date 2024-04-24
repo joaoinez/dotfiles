@@ -27,13 +27,17 @@ format = "[ $branch ]($style)"
 style = "peach"
 
 [git_status]
-format = "$ahead_behind$conflicted$staged$untracked"
+format = "$ahead_behind$conflicted$staged$deleted$renamed$modified$typechanged$untracked"
 up_to_date = "[ ](text)"
 ahead = "[ ](sapphire)"
 behind = "[ ](lavender)"
 diverged = "[󰃻 ](maroon)"
 conflicted = "[ ](red)"
 staged = "[ ](green)"
+deleted = "[ ](yellow)"
+renamed = "[ ](yellow)"
+modified = "[ ](yellow)"
+typechanged = "[ ](yellow)"
 untracked = "[ ](yellow)"
 
 [palettes.catppuccin_mocha]
