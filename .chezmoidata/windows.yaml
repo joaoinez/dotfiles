@@ -3,5 +3,6 @@ windows:
     - "Discord.Discord"
     - "Microsoft.PowerToys"
     - "Microsoft.VisualStudioCode"
+    - "Nvidia.GeForceExperience"
     - "TheBrowserCompany.Arc"
     - "Valve.Steam"
