@@ -9,6 +9,9 @@
 	helper = !/usr/bin/gh auth git-credential
 	{{- else if eq .chezmoi.os "darwin" }}
 	helper = !/opt/homebrew/bin/gh auth git-credential
+	{{- else if eq .chezmoi.os "windows" }}
+	helper = 
+	helper = !'C:\\Program Files\\GitHub CLI\\gh.exe' auth git-credential
 	{{- end }}
 [credential "https://gist.github.com"]
 	helper = 
@@ -16,4 +19,7 @@
 	helper = !/usr/bin/gh auth git-credential
 	{{- else if eq .chezmoi.os "darwin" }}
 	helper = !/opt/homebrew/bin/gh auth git-credential
+	{{- else if eq .chezmoi.os "windows" }}
+	helper = 
+	helper = !'C:\\Program Files\\GitHub CLI\\gh.exe' auth git-credential
 	{{- end }}
