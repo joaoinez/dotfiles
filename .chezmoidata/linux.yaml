@@ -57,6 +57,7 @@ linux:
     - "imagemagick"
     - "lf"
     - "man"
+    - "mpv"
     - "ncdu"
     - "os-prober"
     - "tldr"
