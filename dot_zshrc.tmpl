@@ -33,6 +33,10 @@ bindkey -v
 # █▄▀ ██▄ █▀░ █▀█ █▄█ █▄▄ ░█░   ██▄ █▄▀ █ ░█░ █▄█ █▀▄
 export EDITOR="nvim"
 
+# ▀█ █▀█ ▀▄▀ █ █▀▄ █▀▀
+# █▄ █▄█ █░█ █ █▄▀ ██▄
+eval "$(zoxide init zsh --cmd cd)"
+
 # █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█   █▀ █▀▀ ▄▀█ █▀█ █▀▀ █░█
 # █▀█ █ ▄█ ░█░ █▄█ █▀▄ ░█░   ▄█ ██▄ █▀█ █▀▄ █▄▄ █▀█
 autoload -U history-search-end
@@ -83,10 +87,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # █▀ ▀█▀ ▄▀█ █▀█ █▀ █░█ █ █▀█
 # ▄█ ░█░ █▀█ █▀▄ ▄█ █▀█ █ █▀▀
 eval "$(starship init zsh)"
-
-# ▀█ █▀█ ▀▄▀ █ █▀▄ █▀▀
-# █▄ █▄█ █░█ █ █▄▀ ██▄
-eval "$(zoxide init zsh --cmd cd)"
 
 # █▀▀ ▀█ █▀▀
 # █▀░ █▄ █▀░
