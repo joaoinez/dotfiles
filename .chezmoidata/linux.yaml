@@ -62,8 +62,6 @@ linux:
     - "os-prober"
     - "tldr"
     - "zoxide"
-    - "zsh-autosuggestions"
-    - "zsh-syntax-highlighting"
 
     # Dev
     - "docker"
@@ -85,6 +83,7 @@ linux:
     - "steam"
     - "openrgb"
     - "pavucontrol"
+    - "vesktop"
 
     # Themes
     - "rose-pine-gtk-theme-full"
@@ -98,7 +97,6 @@ linux:
     - "ttf-hack-nerd"
     - "ttf-noto-nerd"
   flatpaks:
-    - "com.discordapp.Discord"
     - "com.ticktick.TickTick"
     - "com.usebottles.bottles"
     - "md.obsidian.Obsidian"
