@@ -69,7 +69,7 @@ linux:
     - "github-cli"
     - "kitty"
     - "lazygit"
-    - "neovim"
+    - "neovim-git"
     - "nvidia-container-toolkit"
     - "nvm"
     - "ollama-cuda"
