@@ -31,6 +31,7 @@ macos:
     - "bat"
     - "btop"
     - "eza"
+    - "gnu-sed"
     - "yabai"
     - "skhd"
     - "borders"
