@@ -1,9 +1,5 @@
 windows:
   apps:
-    - "Discord.Discord"
-    - "GitHub.cli"
-    - "LGUG2Z.komorebi"
-    - "LGUG2Z.whkd"
     - "Microsoft.PowerToys"
     - "Microsoft.PowerShell"
     - "Microsoft.VisualStudioCode"

@@ -6,15 +6,8 @@ Wallpapers/
 Wallpapers/**
 README.md
 {{- if eq .chezmoi.os "linux" }}
-.config/yabai/
-.config/yabai/**
-.config/skhd/
-.config/skhd/**
 .config/sketchybar/
 .config/sketchybar/**
-.config/whkdrc
-applications.yaml
-komorebi.json
 {{- else if eq .chezmoi.os "darwin" }}
 .config/gtk-3.0
 .config/gtk-3.0/**
@@ -36,10 +29,7 @@ komorebi.json
 .config/wlogout/**
 .config/kdeglobals
 .config/mimeapps.list
-.config/whkdrc
 .local/bin/change_wallpaper.sh
-applications.yaml
-komorebi.json
 {{- else if eq .chezmoi.os "windows" }}
 .config/gtk-3.0
 .config/gtk-3.0/**
@@ -57,8 +47,6 @@ komorebi.json
 .config/rofi/**
 .config/sketchybar/
 .config/sketchybar/**
-.config/skhd/
-.config/skhd/**
 .config/swaync/
 .config/swaync/**
 .config/tmux/
@@ -67,8 +55,6 @@ komorebi.json
 .config/waybar/**
 .config/wlogout/
 .config/wlogout/**
-.config/yabai/
-.config/yabai/**
 .config/kdeglobals
 .config/mimeapps.list
 .config/starship.toml
