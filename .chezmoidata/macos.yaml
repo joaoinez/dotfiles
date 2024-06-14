@@ -1,7 +1,6 @@
 macos:
   taps:
     - "homebrew/cask-fonts"
-    - "FelixKratz/formulae"
   casks:
     # Apps
     - "arc"
@@ -31,7 +30,6 @@ macos:
     - "btop"
     - "eza"
     - "gnu-sed"
-    - "sketchybar"
     - "fzf"
     - "fastfetch"
     - "lf"
