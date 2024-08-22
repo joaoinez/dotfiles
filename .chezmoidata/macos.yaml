@@ -1,6 +1,5 @@
 macos:
   taps:
-    - "homebrew/cask-fonts"
   casks:
     # Apps
     - "arc"
@@ -14,7 +13,9 @@ macos:
     - "notion"
     - "obsidian"
     - "raycast"
+    - "rectangle"
     - "spotify"
+    - "steam"
     - "ticktick"
     - "visual-studio-code"
     - "whatsapp"
