@@ -3,6 +3,7 @@ macos:
   casks:
     # Apps
     - "arc"
+    - "bruno"
     - "discord"
     - "docker"
     - "figma"

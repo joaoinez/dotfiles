@@ -1,8 +1,14 @@
 windows:
   apps:
+    - "Blizzard.BattleNet"
+    - "Discord.Discord"
+    - "EpicGames.EpicGamesLauncher"
     - "Microsoft.PowerToys"
     - "Microsoft.PowerShell"
     - "Microsoft.VisualStudioCode"
     - "Nvidia.GeForceExperience"
-    - "TheBrowserCompany.Arc"
+    - "RiotGames.LeagueOfLegends.EUW"
+    - "Spotify.Spotify"
     - "Valve.Steam"
+    - "Vendicated.Vencord.PTB"
+    - "Zen-Team.Zen-Browser"
