@@ -1,7 +1,6 @@
 windows:
   apps:
     - "Blizzard.BattleNet"
-    - "Discord.Discord"
     - "EpicGames.EpicGamesLauncher"
     - "Microsoft.PowerToys"
     - "Microsoft.PowerShell"
