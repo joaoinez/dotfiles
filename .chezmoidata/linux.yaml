@@ -27,7 +27,6 @@ linux:
     - "xdg-desktop-portal-hyprland"
     - "xdg-desktop-portal-gtk"
     ## GUI
-    - "qt4ct"
     - "qt5ct"
     - "qt5-wayland"
     - "qt6ct"
