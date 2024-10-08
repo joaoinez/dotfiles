@@ -11,6 +11,10 @@ linux:
     - "zsh"
     ## Nvidia
     - "nvidia-dkms"
+    - "nvidia-utils"
+    - "lib32-nvidia-utils"
+    - "egl-wayland"
+    - "libva-nvidia-driver"
     ## WM
     - "hyprland-git"
     ## Greeter
@@ -20,9 +24,10 @@ linux:
     ## Authentication
     - "polkit-gnome"
     ## Desktop portals
-    - "xdg-desktop-portal-hyprland-git"
+    - "xdg-desktop-portal-hyprland"
     - "xdg-desktop-portal-gtk"
     ## GUI
+    - "qt4ct"
     - "qt5ct"
     - "qt5-wayland"
     - "qt6ct"
@@ -31,7 +36,7 @@ linux:
     ## Audio
     - "pamixer"
     ## App launcher
-    - "rofi-lbonn-wayland-git"
+    - "rofi-wayland"
     ## Top bar
     - "waybar"
     ## Notifications
@@ -41,7 +46,7 @@ linux:
     ## Wallpapers
     - "swww"
     ## Cursors
-    - "rose-pine-cursor"
+    # - "rose-pine-cursor"
     ## Package manager
     - "flatpak"
 
