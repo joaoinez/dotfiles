@@ -64,6 +64,8 @@ linux:
     - "mpv"
     - "ncdu"
     - "os-prober"
+    - "pacman-contrib"
+    - "protonup-qt"
     - "tldr"
     - "zoxide"
 

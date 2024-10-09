@@ -14,11 +14,13 @@
     "wireplumber",
     "network",
     "custom/swaync",
+    "custom/updates",
     "custom/wlogout",
   ],
   "custom/os": {
     "format": "󰣇",
     "on-click": "kitty --title Kitty",
+    "tooltip": false,
   },
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>",
@@ -32,14 +34,15 @@
     "separate-outputs": true,
     "rewrite": {
       "(.*) — Mozilla Firefox": "Firefox 󰈹",
-      "(.*) — Zen Browser": "Firefox 󰈹",
+      "(.*) — Zen Browser": "Zen 󰈹",
       "Kitty": "Kitty ",
       "(.*)Discord(.*)": "Discord ",
     },
   },
   "clock": {
-    "format": "{:%H:%M   %A, %B %d, %Y }",
+    "format": "{:%H:%M      %A, %B %d, %Y  }",
     "on-click": "flatpak run org.gnome.Calendar",
+    "tooltip": false,
   },
   "tray": {
     "spacing": 10,
@@ -85,11 +88,15 @@
   "custom/wlogout": {
     "format": "󰐥",
     "on-click": "wlogout -b 2 -c 0 -r 0 --protocol layer-shell -m 400",
+    "tooltip": false,
   },
   "custom/updates": {
     "format": "{}  ",
-    "interval": "once",
-    "exec": "~/.config/waybar/scripts/updates.sh",
-    "on-click": "yay",
+    "exec": "checkupdates | wc -l",
+    "interval": 3600, // every hour
+    "exec-if": "exit 0",
+    "on-click": "kitty --hold sh -c 'paru'; pkill -SIGRTMIN+8 waybar",
+    "signal": 8,
+    "tooltip-format": "{} updates available",
   },
 }
