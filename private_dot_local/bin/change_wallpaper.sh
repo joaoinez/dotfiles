@@ -14,8 +14,12 @@ if [[ $# -lt 1 ]] || [[ ! -d $1   ]]; then
 	exit 1
 fi
 
+# Edit below to control the images transition
+export SWWW_TRANSITION_FPS=120
+export SWWW_TRANSITION_STEP=2
+
 # This controls (in seconds) when to switch to the next image
-INTERVAL=1800
+INTERVAL=300
 
 while true; do
 	find "$1" -type f \
@@ -24,7 +28,7 @@ while true; do
 		done \
 		| sort -n | cut -d':' -f2- \
 		| while read -r img; do
-			swww img --transition-type grow --transition-pos 1,1 --transition-step 90 "$img"
+			swww img --transition-type grow --transition-pos 1,1 "$img"
 			sleep $INTERVAL
 		done
 done

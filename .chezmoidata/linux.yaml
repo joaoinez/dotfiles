@@ -88,6 +88,7 @@ linux:
     - "openrgb"
     - "pavucontrol"
     - "vesktop"
+    - "zen-browser-bin"
 
     # Themes
     - "rose-pine-gtk-theme-full"
