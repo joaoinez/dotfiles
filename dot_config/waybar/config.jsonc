@@ -2,24 +2,29 @@
 {
   "layer": "top", // Waybar at top layer
   "spacing": 0, // Gaps between modules (0)
-  "modules-left": ["custom/os", "hyprland/workspaces", "custom/divider", "hyprland/window"],
+  "modules-left": [
+    "custom/os",
+    "hyprland/workspaces",
+    "custom/divider",
+    "hyprland/window",
+  ],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
     "wireplumber",
     "network",
     "custom/swaync",
-    "custom/wlogout"
+    "custom/wlogout",
   ],
   "custom/os": {
     "format": "󰣇",
-    "on-click": "kitty --title Kitty"
+    "on-click": "kitty --title Kitty",
   },
   "hyprland/workspaces": {
-    "format": "<sub>{icon}</sub>"
+    "format": "<sub>{icon}</sub>",
   },
   "custom/divider": {
-    "format": "󰜥"
+    "format": "󰜥",
   },
   "hyprland/window": {
     "format": "{}",
@@ -27,22 +32,23 @@
     "separate-outputs": true,
     "rewrite": {
       "(.*) — Mozilla Firefox": "Firefox 󰈹",
+      "(.*) — Zen Browser": "Firefox 󰈹",
       "Kitty": "Kitty ",
-      "(.*)Discord(.*)": "Discord "
-    }
+      "(.*)Discord(.*)": "Discord ",
+    },
   },
   "clock": {
     "format": "{:%H:%M   %A, %B %d, %Y }",
-    "on-click": "flatpak run org.gnome.Calendar"
+    "on-click": "flatpak run org.gnome.Calendar",
   },
   "tray": {
-    "spacing": 10
+    "spacing": 10,
   },
   "wireplumber": {
     "format": "{volume} {icon}",
     "format-muted": "",
     "on-click": "pavucontrol",
-    "format-icons": ["", "", ""]
+    "format-icons": ["", "", ""],
   },
   "network": {
     "format": "{ifname}",
@@ -54,7 +60,7 @@
     "tooltip-format-ethernet": "{ipaddr} @ {ifname} 󰈀",
     "tooltip-format-disconnected": "Disconnected",
     "interval": 60,
-    "max-length": 50
+    "max-length": 50,
   },
   "custom/swaync": {
     "tooltip": false,
@@ -67,23 +73,23 @@
       "inhibited-notification": "<span foreground='red'><sup></sup></span>",
       "inhibited-none": "",
       "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": ""
+      "dnd-inhibited-none": "",
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
-    "escape": true
+    "escape": true,
   },
   "custom/wlogout": {
     "format": "󰐥",
-    "on-click": "wlogout -b 2 -c 0 -r 0 --protocol layer-shell -m 400"
+    "on-click": "wlogout -b 2 -c 0 -r 0 --protocol layer-shell -m 400",
   },
   "custom/updates": {
     "format": "{}  ",
     "interval": "once",
     "exec": "~/.config/waybar/scripts/updates.sh",
-    "on-click": "yay"
-  }
+    "on-click": "yay",
+  },
 }
