@@ -54,7 +54,7 @@ linux:
     - "btop"
     - "cliphist"
     - "eza"
-    - "fancontrol-gui"
+    # - "fancontrol-gui"
     - "fastfetch"
     - "fzf"
     - "gparted"
