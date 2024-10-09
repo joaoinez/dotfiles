@@ -45,15 +45,11 @@ curl -fsSL joaoinez.me/arch.sh | sh
 chezmoi diff
 ```
 
----
-
 #### Sign in to github
 
 ```shell
 gh auth login
 ```
-
----
 
 #### Install node
 
@@ -61,10 +57,10 @@ gh auth login
 nvm install node
 ```
 
----
-
 #### Initialize neovim
 #### Initialize tmux
+
+---
 
 ```text
 █▀▄▀█ ▄▀█ █▀▀ █▀█ █▀
