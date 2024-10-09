@@ -10,7 +10,7 @@
 
 ---
 
-```
+```text
 ▄▀█ █▀█ █▀▀ █░█
 █▀█ █▀▄ █▄▄ █▀█
 ```
@@ -37,7 +37,9 @@ curl -fsSL joaoinez.me/arch.sh | sh
 
 ---
 
-### Check diffs
+### Next steps
+
+#### Check diffs
 
 ```shell
 chezmoi diff
@@ -45,7 +47,26 @@ chezmoi diff
 
 ---
 
+#### Sign in to github
+
+```shell
+gh auth login
 ```
+
+---
+
+#### Install node
+
+```shell
+nvm install node
+```
+
+---
+
+#### Initialize neovim
+#### Initialize tmux
+
+```text
 █▀▄▀█ ▄▀█ █▀▀ █▀█ █▀
 █░▀░█ █▀█ █▄▄ █▄█ ▄█
 ```
