@@ -145,6 +145,13 @@ chezmoi diff
 
 ---
 
+### Install Vesktop
+
+[download link](https://github.com/Vencord/Vesktop?tab=readme-ov-file#mac)
+
+---
+
+
 ```
 █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█ █▀
 ▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀ ▄█
