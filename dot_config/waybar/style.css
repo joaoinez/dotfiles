@@ -68,20 +68,12 @@ window#waybar.empty #window {
   background-color: transparent;
 }
 
-#clock {
+#clock-weather {
   background-color: @surface;
   padding: 0.25em 1em;
   margin: 0.5em 0;
   border-radius: 9999px;
   color: @gold;
-}
-
-#custom-updates {
-  background-color: @surface;
-  padding: 0.25em 0.75em;
-  margin: 0.5em 0;
-  margin-right: 0.5em;
-  border-radius: 4px;
 }
 
 #tray {
@@ -110,12 +102,16 @@ window#waybar.empty #window {
   color: @text;
 }
 
-#custom-swaync {
+#notifs {
   background-color: @surface;
   padding: 0.25em 0.75em;
   margin: 0.5em 0;
   margin-right: 0.5em;
   border-radius: 4px;
+}
+
+#custom-swaync {
+  margin-right: 0.75em;
   color: @gold;
 }
 

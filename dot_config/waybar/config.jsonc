@@ -8,13 +8,12 @@
     "custom/divider",
     "hyprland/window",
   ],
-  "modules-center": ["clock"],
+  "modules-center": ["group/clock-weather"],
   "modules-right": [
     "tray",
     "wireplumber",
     "network",
-    "custom/swaync",
-    "custom/updates",
+    "group/notifs",
     "custom/wlogout",
   ],
   "custom/os": {
@@ -39,10 +38,34 @@
       "(.*)Discord(.*)": "Discord ",
     },
   },
+  "group/clock-weather": {
+    "orientation": "inherit",
+    "modules": ["clock", "custom/weather"],
+  },
   "clock": {
     "format": "{:%H:%M      %A, %B %d, %Y  }",
     "on-click": "flatpak run org.gnome.Calendar",
-    "tooltip": false,
+    "tooltip": true,
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#c4a7e7'><b>{}</b></span>",
+        "days": "<span color='#e0def4'><b>{}</b></span>",
+        "weekdays": "<span color='#f6c177'><b>{}</b></span>",
+        "today": "<span color='#eb6f92'><b><u>{}</u></b></span>",
+      },
+    },
+  },
+  "custom/weather": {
+    "exec": "~/.config/waybar/scripts/get_weather.sh Rotterdam+Netherlands",
+    "return-type": "json",
+    "format": "    {}",
+    "tooltip": true,
+    "interval": 1800,
   },
   "tray": {
     "spacing": 10,
@@ -65,6 +88,10 @@
     "interval": 60,
     "max-length": 50,
   },
+  "group/notifs": {
+    "orientation": "inherit",
+    "modules": ["custom/swaync", "custom/updates"],
+  },
   "custom/swaync": {
     "tooltip": false,
     "format": "{} {icon}",
@@ -85,11 +112,6 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true,
   },
-  "custom/wlogout": {
-    "format": "󰐥",
-    "on-click": "wlogout -b 2 -c 0 -r 0 --protocol layer-shell -m 400",
-    "tooltip": false,
-  },
   "custom/updates": {
     "format": "{}  ",
     "exec": "checkupdates | wc -l",
@@ -98,5 +120,10 @@
     "on-click": "kitty --hold sh -c 'paru'; pkill -SIGRTMIN+8 waybar",
     "signal": 8,
     "tooltip-format": "{} updates available",
+  },
+  "custom/wlogout": {
+    "format": "󰐥",
+    "on-click": "wlogout -b 2 -c 0 -r 0 --protocol layer-shell -m 400",
+    "tooltip": false,
   },
 }
