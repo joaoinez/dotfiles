@@ -55,6 +55,7 @@
       "format": {
         "months": "<span color='#c4a7e7'><b>{}</b></span>",
         "days": "<span color='#e0def4'><b>{}</b></span>",
+        "weeks": "<span color='#26233a'><b>{}</b></span>",
         "weekdays": "<span color='#f6c177'><b>{}</b></span>",
         "today": "<span color='#eb6f92'><b><u>{}</u></b></span>",
       },

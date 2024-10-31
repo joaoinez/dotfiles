@@ -31,7 +31,7 @@
 
 .floating-notifications.background .notification-row .notification-background {
   border-radius: 0.5rem;
-  background-color: #191724;
+  background-color: rgba(25, 23, 36, 0.8);
   color: #e0def4;
   border: 1px solid #6e6a86;
 }
@@ -142,7 +142,7 @@
 .control-center {
   border-radius: 0.5rem;
   margin: 1rem;
-  background-color: #191724;
+  background-color: rgba(25, 23, 36, 0.8);
   color: #e0def4;
   padding: 1rem;
   border: 1px solid #6e6a86;
