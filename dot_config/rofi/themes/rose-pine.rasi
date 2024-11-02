@@ -2,8 +2,8 @@
 * {
     font:   "NotoSans Nerd Font 12";
 
-    bg0:     #191724;
-    bg1:     #26233a;
+    bg0:     rgba(25,23,36, 0.8);
+    bg1:     rgb(38,35,58, 0.2);
     fg0:     #e0def4;
 
     accent-color:     #ebbcba;
@@ -20,6 +20,7 @@
 window {
     location:   center;
     width:      640;
+    border-radius: 10px;
 
     background-color:   @bg0;
 }
