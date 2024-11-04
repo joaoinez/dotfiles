@@ -63,6 +63,7 @@
     "format": "{}",
     "tooltip": true,
     "interval": 1800,
+    "on-click": "flatpak run org.gnome.Weather",
   },
   "tray": {
     "spacing": 10,

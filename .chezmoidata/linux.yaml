@@ -110,4 +110,5 @@ linux:
     - "org.gnome.Calculator"
     - "org.gnome.Calendar"
     - "org.gnome.eog"
+    - "org.gnome.Weather"
     - "org.kde.ark"
