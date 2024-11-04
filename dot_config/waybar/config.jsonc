@@ -8,7 +8,7 @@
     "custom/divider",
     "hyprland/window",
   ],
-  "modules-center": ["group/clock-weather"],
+  "modules-center": ["clock", "custom/weather"],
   "modules-right": [
     "tray",
     "wireplumber",
@@ -38,10 +38,6 @@
       "(.*)Discord(.*)": "Discord ",
     },
   },
-  "group/clock-weather": {
-    "orientation": "inherit",
-    "modules": ["clock", "custom/weather"],
-  },
   "clock": {
     "format": "{:%H:%M      %A, %B %d, %Y  }",
     "on-click": "flatpak run org.gnome.Calendar",
@@ -64,7 +60,7 @@
   "custom/weather": {
     "exec": "~/.config/waybar/scripts/get_weather.sh Rotterdam+Netherlands",
     "return-type": "json",
-    "format": "    {}",
+    "format": "{}",
     "tooltip": true,
     "interval": 1800,
   },
