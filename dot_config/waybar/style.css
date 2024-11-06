@@ -70,6 +70,15 @@ window#waybar.empty #window {
   background-color: transparent;
 }
 
+#custom-weather {
+  background-color: @surface;
+  padding: 0.25em 1em;
+  margin: 0.5em 0;
+  margin-right: 0.5em;
+  border-radius: 9999px;
+  color: @foam;
+}
+
 #clock {
   background-color: @surface;
   padding: 0.25em 1em;
@@ -78,13 +87,13 @@ window#waybar.empty #window {
   color: @gold;
 }
 
-#custom-weather {
+#custom-media {
   background-color: @surface;
   padding: 0.25em 1em;
   margin: 0.5em 0;
-  margin-left: 0.5em;
   border-radius: 9999px;
-  color: @foam;
+  color: @text;
+  margin-left: 0.5em;
 }
 
 #tray {

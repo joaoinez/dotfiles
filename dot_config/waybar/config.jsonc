@@ -8,7 +8,7 @@
     "custom/divider",
     "hyprland/window",
   ],
-  "modules-center": ["clock", "custom/weather"],
+  "modules-center": ["custom/weather", "clock", "custom/media"],
   "modules-right": [
     "tray",
     "wireplumber",
@@ -38,6 +38,14 @@
       "(.*)Discord(.*)": "Discord ",
     },
   },
+  "custom/weather": {
+    "exec": "~/.config/waybar/scripts/get_weather.sh Rotterdam+Netherlands",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 1800,
+    "on-click": "flatpak run org.gnome.Weather",
+  },
   "clock": {
     "format": "{:%H:%M      %A, %B %d, %Y  }",
     "on-click": "flatpak run org.gnome.Calendar",
@@ -57,13 +65,13 @@
       },
     },
   },
-  "custom/weather": {
-    "exec": "~/.config/waybar/scripts/get_weather.sh Rotterdam+Netherlands",
-    "return-type": "json",
+  "custom/media": {
     "format": "{}",
-    "tooltip": true,
-    "interval": 1800,
-    "on-click": "flatpak run org.gnome.Weather",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 40,
+    "on-click": "playerctl play-pause",
+    "exec": "~/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
   },
   "tray": {
     "spacing": 10,
