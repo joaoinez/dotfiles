@@ -16,9 +16,9 @@ linux:
     - "egl-wayland"
     - "libva-nvidia-driver"
     ## WM
-    - "hyprland-git"
+    - "hyprland"
     ## Greeter
-    - "sddm-git"
+    - "sddm"
     ## Logout
     - "wlogout"
     ## Authentication
@@ -70,15 +70,15 @@ linux:
     - "zoxide"
 
     # Dev
-    - "docker"
-    - "docker-compose"
+    # - "docker"
+    # - "docker-compose"
     - "github-cli"
     - "kitty"
     - "lazygit"
     - "neovim"
-    - "nvidia-container-toolkit"
+    # - "nvidia-container-toolkit"
     - "nvm"
-    - "ollama-cuda"
+    # - "ollama-cuda"
     - "tmux"
     - "visual-studio-code-bin"
 
@@ -87,7 +87,7 @@ linux:
     - "firefox"
     - "chromium"
     - "steam"
-    - "openrgb"
+    # - "openrgb"
     - "pavucontrol"
     - "vesktop"
     - "zen-browser-bin"
@@ -104,9 +104,8 @@ linux:
     - "ttf-hack-nerd"
     - "ttf-noto-nerd"
   flatpaks:
-    - "com.ticktick.TickTick"
     - "com.usebottles.bottles"
-    - "md.obsidian.Obsidian"
+    # - "md.obsidian.Obsidian"
     - "org.gnome.Calculator"
     - "org.gnome.Calendar"
     - "org.gnome.eog"
