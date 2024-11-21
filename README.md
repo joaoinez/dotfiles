@@ -22,6 +22,8 @@
 
 #### Add `base-devel` and `git` as additional packages to be installed
 
+#### Reboot
+
 ---
 
 ### Build `paru`
@@ -70,6 +72,4 @@ chezmoi diff
 gh auth login
 ```
 
-#### Initialize neovim
-
-#### Initialize tmux
+#### Initialize `neovim` and `tmux`
