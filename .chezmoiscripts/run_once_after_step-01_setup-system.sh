@@ -9,6 +9,16 @@ echo "Enabling pacman colors"
 
 sudo sed -i 's/#Color/Color/' /etc/pacman.conf
 
+echo "Applying NVIDIA configs"
+
+sudo sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
+
+sudo touch /etc/modprobe.d/nvidia.conf
+
+sudo bash -c 'echo "options nvidia-drm modeset=1 fbdev=1" >> /etc/modprobe.d/nvidia.conf'
+
+sudo mkinitcpio -P
+
 echo "Applying GRUB theme"
 
 if [ ! -d /boot/grub/themes ]; then
@@ -23,12 +33,3 @@ sudo cp ~/.local/share/chezmoi/root/etc/default/grub /etc/default/grub
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-echo "Applying NVIDIA configs"
-
-sudo sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
-
-sudo touch /etc/modprobe.d/nvidia.conf
-
-sudo bash -c 'echo "options nvidia-drm modeset=1 fbdev=1" >> /etc/modprobe.d/nvidia.conf'
-
-sudo mkinitcpio -P

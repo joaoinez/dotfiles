@@ -7,7 +7,7 @@ dev:
     - "neovim"
     - "tmux"
     - "lazygit"
-    - "bruno"
+    - "bruno-bin"
     # - "docker"
     # - "docker-compose"
     # - "nvidia-container-toolkit"

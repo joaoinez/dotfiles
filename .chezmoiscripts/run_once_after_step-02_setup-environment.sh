@@ -20,9 +20,3 @@ echo "Creating filesystem"
 mkdir -p ~/Documents/Projects
 
 mkdir -p ~/Public
-
-# echo "Installing Hyprland plugins"
-#
-# hyprpm update
-#
-# hyprpm add https://github.com/KZDKM/Hyprspace
