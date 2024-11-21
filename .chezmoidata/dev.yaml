@@ -1,5 +1,6 @@
 packages:
   - "nvm"
+  - "go"
   - "github-cli"
   - "kitty"
   - "neovim"
