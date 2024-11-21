@@ -15,8 +15,6 @@ sudo cp ~/.local/share/chezmoi/root/usr/share/sddm/themes/tokyo-night-sddm/theme
 
 sudo systemctl enable sddm.service &>/dev/null
 
-echo "Creating filesystem"
+echo "Creating Projects directory"
 
 mkdir -p ~/Documents/Projects
-
-mkdir -p ~/Public
