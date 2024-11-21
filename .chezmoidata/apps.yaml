@@ -1,6 +1,7 @@
-packages:
-  - "firefox"
-  - "zen-browser-bin"
-  - "vesktop"
-  - "steam"
-  - "gnome-calculator"
+apps:
+  packages:
+    - "firefox"
+    - "zen-browser-bin"
+    - "vesktop"
+    - "steam"
+    - "gnome-calculator"
