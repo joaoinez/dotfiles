@@ -3,4 +3,6 @@ Background="Backgrounds/shacks.png"
 ScreenWidth="2560"
 ScreenHeight="1440"
 
+HourFormat="hh:mm"
+
 HeaderText="مرحبًا"

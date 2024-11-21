@@ -68,12 +68,6 @@ chezmoi diff
 
 #### Check nvm node version
 
-#### Run `swww` if wallpaper is missing
-
-```shell
-swww img --transition-type grow --transition-pos top-right --transition-fps 120 ~/.local/share/chezmoi/Wallpapers/retro.jpg
-```
-
 #### Sign in to github
 
 ```shell

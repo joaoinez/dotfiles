@@ -44,11 +44,11 @@
     "format": "{}",
     "tooltip": true,
     "interval": 1800,
-    "on-click": "flatpak run org.gnome.Weather",
+    "on-click": "gnome-weather",
   },
   "clock": {
     "format": "{:%H:%M      %A, %B %d, %Y  }",
-    "on-click": "flatpak run org.gnome.Calendar",
+    "on-click": "gnome-calendar",
     "tooltip": true,
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
