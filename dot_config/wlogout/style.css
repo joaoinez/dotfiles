@@ -5,7 +5,7 @@ window {
 button {
   color: #e0def4;
   background-color: transparent;
-  /* background-color: #31748f; */
+  background-color: #31748f;
   outline-style: none;
   border: none;
   border-width: 0px;
@@ -19,12 +19,12 @@ button {
 }
 
 button:focus {
-  /* background-color: #c4a7e7; */
+  background-color: #c4a7e7;
   background-size: 10%;
 }
 
 button:hover {
-  /* background-color: #eb6f92; */
+  background-color: #eb6f92;
   background-size: 15%;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
@@ -32,8 +32,12 @@ button:hover {
 
 #shutdown {
   background-image: image(url("/usr/share/wlogout/assets/shutdown.svg"));
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 
 #reboot {
   background-image: image(url("/usr/share/wlogout/assets/reboot.svg"));
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
