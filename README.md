@@ -47,7 +47,7 @@ makepkg -si --noconfirm
 #### Install `chezmoi`
 
 ```shell
-paru chezmoi
+paru -S chezmoi
 ```
 
 #### Run `chezmoi`
