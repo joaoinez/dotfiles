@@ -17,4 +17,6 @@ mkdir -p ~/Public
 
 echo "Installing Hyprland plugins"
 
+hyprpm update
+
 hyprpm add https://github.com/KZDKM/Hyprspace
