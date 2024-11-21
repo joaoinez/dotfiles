@@ -1,10 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-if [[ $(zsh -c "source ~/.zshrc && nvm current") == "none" ]]; then
+if [[ $(zsh -c "source ~/.zshrc && nvm current") == "system" ]]; then
   echo "Installing node"
 
-  zsh -c 'source ~/.zshrc && nvm install node' &>/dev/null
+  zsh -c 'source ~/.zshrc && nvm install node && nvm use node' &>/dev/null
 fi
 
 if [ ! -d ~/.config/nvim ]; then
