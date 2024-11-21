@@ -18,7 +18,7 @@
   ],
   "custom/os": {
     "format": "󰣇",
-    "on-click": "kitty --title Kitty",
+    "on-click": "kitty --title Kitty --hold sh -c 'fastfetch'",
     "tooltip": false,
   },
   "hyprland/workspaces": {

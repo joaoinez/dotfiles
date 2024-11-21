@@ -1,9 +1,0 @@
-{{ if (or (eq .chezmoi.os "linux") (eq .chezmoi.os "darwin")) -}}
-#!/bin/bash
-set -euo pipefail
-
-echo "Installation completed."
-{{ if eq .chezmoi.os "linux" -}}
-  echo "You may now reboot."
-{{ end -}}
-{{ end -}}

@@ -1,0 +1,125 @@
+
+# ███████╗░██████╗██╗░░██╗██████╗░░█████╗░
+# ╚════██║██╔════╝██║░░██║██╔══██╗██╔══██╗
+# ░░███╔═╝╚█████╗░███████║██████╔╝██║░░╚═╝
+# ██╔══╝░░░╚═══██╗██╔══██║██╔══██╗██║░░██╗
+# ███████╗██████╔╝██║░░██║██║░░██║╚█████╔╝
+# ╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░
+#----------------------------------------------
+
+# █░█ ▄▀█ █▀█ █ ▄▀█ █▄▄ █░░ █▀▀ █▀
+# ▀▄▀ █▀█ █▀▄ █ █▀█ █▄█ █▄▄ ██▄ ▄█
+export MYSCRIPTS="$HOME/.local/bin"
+export MYVIMRC="$HOME/.config/nvim"
+export EDITOR="nvim"
+
+# ▀█ █ █▄░█ █ ▀█▀
+# █▄ █ █░▀█ █ ░█░
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+source "${ZINIT_HOME}/zinit.zsh"
+
+# █▀█ █░░ █░█ █▀▀ █ █▄░█ █▀
+# █▀▀ █▄▄ █▄█ █▄█ █ █░▀█ ▄█
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# █▀ █▄░█ █ █▀█ █▀█ █▀▀ ▀█▀ █▀
+# ▄█ █░▀█ █ █▀▀ █▀▀ ██▄ ░█░ ▄█
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::command-not-found
+
+# █▀▀ █▀█ █▀▄▀█ █▀█ █░░ █▀▀ ▀█▀ █ █▀█ █▄░█
+# █▄▄ █▄█ █░▀░█ █▀▀ █▄▄ ██▄ ░█░ █ █▄█ █░▀█
+autoload -Uz compinit && compinit
+
+zinit cdreplay -q
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+# █▄▀ █▀▀ █▄█ █▄▄ █ █▄░█ █▀▄ █ █▄░█ █▀▀ █▀
+# █░█ ██▄ ░█░ █▄█ █ █░▀█ █▄▀ █ █░▀█ █▄█ ▄█
+bindkey -v
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+bindkey '^[w' kill-region
+
+# █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█
+# █▀█ █ ▄█ ░█░ █▄█ █▀▄ ░█░
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# ▄▀█ █░░ █ ▄▀█ █▀ █▀▀ █▀
+# █▀█ █▄▄ █ █▀█ ▄█ ██▄ ▄█
+# Clear everything
+alias cclear="clear && printf '\e[3J'"
+
+# Filesystem
+alias ls='ls --color'
+alias ll="eza -lah --git"
+alias tree="eza -T -L=1"
+alias cat="bat"
+
+# Neovim
+alias vim='nvim'
+
+# Zinit
+alias zstatus='zinit zstatus'
+
+# Chezmoi
+alias .cd="chezmoi cd ~"
+alias .apply="chezmoi apply"
+alias .init="chezmoi init"
+alias .update="chezmoi update"
+alias .add="chezmoi add"
+alias .readd="chezmoi re-add"
+alias .edit="chezmoi edit --apply"
+alias .vim="chezmoi edit --apply"
+alias .merge="chezmoi merge"
+alias .diff="chezmoi diff"
+alias .managed="chezmoi managed"
+alias .verify="chezmoi verify"
+alias .push="sh ~/.local/bin/push_dotfiles.sh"
+
+# Source .zshrc
+alias sourcez="source ~/.zshrc"
+
+# AUR
+alias yay="paru"
+alias clearcache="paru -Sccd"
+
+# █▀▀ █░█ ▄▀█ █░░
+# ██▄ ▀▄▀ █▀█ █▄▄
+if [[ -f "/opt/homebrew/bin/brew" ]] then
+  # If you're using macOS, you'll want this enabled
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+eval "$(starship init zsh)"
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+# █▄░█ █░█ █▀▄▀█
+# █░▀█ ▀▄▀ █░▀░█
+source /usr/share/nvm/init-nvm.sh

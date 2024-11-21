@@ -1,5 +1,0 @@
-{{ if eq .chezmoi.os "windows" -}}
-{{ range .windows.apps -}}
-winget install --id {{ . | quote }} --ignore-security-hash
-{{ end -}}
-{{ end -}}

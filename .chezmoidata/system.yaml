@@ -1,0 +1,12 @@
+packages:
+  - "linux-zen-headers"
+  - "zsh"
+  - "nvidia-dkms"
+  # - "nvidia-utils"
+  - "lib32-nvidia-utils"
+  # - "libva"
+  - "libva-nvidia-driver"
+  # - "egl-wayland"
+  - "pacman-contrib"
+  - "vi"
+  - "man"

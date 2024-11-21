@@ -1,0 +1,12 @@
+packages:
+  - "nvm"
+  - "github-cli"
+  - "kitty"
+  - "neovim"
+  - "tmux"
+  - "lazygit"
+  - "bruno"
+  # - "docker"
+  # - "docker-compose"
+  # - "nvidia-container-toolkit"
+  # - "ollama-cuda"

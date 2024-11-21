@@ -1,19 +1,45 @@
-{{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 set -euo pipefail
 
-{{ range .linux.packages -}}
+{{ range .system.packages -}}
 if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
   echo "Installing package {{ . | quote }}"
 
   paru -S --noconfirm {{ . | quote }}
 fi
 {{ end -}}
-{{ range .linux.flatpaks -}}
-if ! flatpak info {{ . | quote }} &>/dev/null ; then
-  echo "Installing flatpak {{ . | quote }}"
+{{ range .environment.packages -}}
+if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
+  echo "Installing package {{ . | quote }}"
 
-  flatpak install -y flathub {{ . | quote }} &>/dev/null
+  paru -S --noconfirm {{ . | quote }}
 fi
 {{ end -}}
+{{ range .theme.packages -}}
+if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
+  echo "Installing package {{ . | quote }}"
+
+  paru -S --noconfirm {{ . | quote }}
+fi
+{{ end -}}
+{{ range .utilities.packages -}}
+if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
+  echo "Installing package {{ . | quote }}"
+
+  paru -S --noconfirm {{ . | quote }}
+fi
+{{ end -}}
+{{ range .apps.packages -}}
+if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
+  echo "Installing package {{ . | quote }}"
+
+  paru -S --noconfirm {{ . | quote }}
+fi
+{{ end -}}
+{{ range .dev.packages -}}
+if ! pacman -Qi {{ . | quote }} &>/dev/null ; then
+  echo "Installing package {{ . | quote }}"
+
+  paru -S --noconfirm {{ . | quote }}
+fi
 {{ end -}}

@@ -1,9 +1,0 @@
-{{ if eq .chezmoi.os "linux" -}}
-#!/bin/bash
-set -euo pipefail
-
-echo "Enabling services"
-
-sudo systemctl enable sddm.service &>/dev/null
-# sudo systemctl enable docker.socket &>/dev/null
-{{ end -}}
