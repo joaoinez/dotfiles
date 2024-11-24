@@ -8,7 +8,7 @@ utilities:
     - "fd"
     - "ripgrep"
     - "fzf"
-    - "tldr"
+    - "tealdeer"
     - "fastfetch"
     - "unzip"
     - "mpv"

@@ -12,6 +12,7 @@
 export MYSCRIPTS="$HOME/.local/bin"
 export MYVIMRC="$HOME/.config/nvim"
 export EDITOR="nvim"
+export MANPAGER="nvim +Man!"
 
 # ▀█ █ █▄░█ █ ▀█▀
 # █▄ █ █░▀█ █ ░█░

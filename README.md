@@ -66,7 +66,11 @@ chezmoi init --apply joaoinez
 chezmoi diff
 ```
 
-#### Check nvm node version
+#### Install `node`
+
+```shell
+nvm install node
+```
 
 #### Sign in to github
 
