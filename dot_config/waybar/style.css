@@ -10,8 +10,9 @@
 }
 
 window#waybar {
-  background: transparent;
+  background: alpha(@base, 0.2);
   color: @foam;
+  border-radius: 9999px;
 }
 
 tooltip {
@@ -26,12 +27,23 @@ tooltip label {
 }
 
 #custom-os {
-  color: @base;
   background-color: @text;
+  color: @base;
   padding: 0.25em 0.69em;
   margin: 0.5em 0;
   margin-left: 1em;
   border-radius: 50%;
+}
+
+#utilities {
+  margin-left: 1.5em;
+  margin-right: 1em;
+  border-radius: 9999px;
+  color: @text;
+}
+
+#custom-resources {
+  margin-left: 1em;
 }
 
 #workspaces {
@@ -50,7 +62,7 @@ tooltip label {
 }
 
 #workspaces button.active {
-  color: @foam;
+  color: @rose;
 }
 
 #custom-divider {
@@ -58,14 +70,14 @@ tooltip label {
   padding-right: 0;
   margin: 0.5em 0;
   margin-left: 0.5em;
-  color: @foam;
+  color: @rose;
 }
 
 #window {
   padding: 0.25em 0.75em;
   margin: 0.5em 0;
   margin-left: 0.5em;
-  color: @foam;
+  color: @rose;
 }
 
 window#waybar.empty #window {
@@ -89,13 +101,41 @@ window#waybar.empty #window {
   color: @gold;
 }
 
-#custom-media {
+#media {
   background-color: @surface;
   padding: 0.25em 1em;
   margin: 0.5em 0;
   border-radius: 9999px;
   color: @text;
   margin-left: 0.5em;
+}
+
+#custom-media-previous {
+  margin-right: 0.5em;
+}
+
+#custom-media-playpause {
+  background-color: @rose;
+  color: @base;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+}
+
+#custom-media-track {
+  margin-left: 0.5em;
+  color: @rose;
+}
+
+#custom-backlight {
+  background-color: @gold;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  margin: 0.75em 0;
+  border-radius: 50%;
+  color: @base;
+  margin-right: 0.5em;
 }
 
 #tray {

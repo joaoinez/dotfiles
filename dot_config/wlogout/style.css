@@ -3,41 +3,49 @@ window {
 }
 
 button {
-  color: #e0def4;
+  color: #191724;
   background-color: transparent;
-  background-color: #31748f;
   outline-style: none;
   border: none;
   border-width: 0px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 25%;
+  background-size: 20%;
   border-radius: 0px;
   box-shadow: none;
   text-shadow: none;
   animation: gradient_f 20s ease-in infinite;
 }
 
-button:focus {
-  background-color: #c4a7e7;
-  background-size: 15%;
-}
+/* button:focus { */
+/* } */
 
 button:hover {
-  background-color: #eb6f92;
-  background-size: 20%;
+  background-size: 15%;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
 }
 
 #shutdown {
+  background-color: #eb6f92;
   background-image: image(url("/usr/share/wlogout/assets/shutdown.svg"));
   border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
 }
 
 #reboot {
+  background-color: #31748f;
   background-image: image(url("/usr/share/wlogout/assets/reboot.svg"));
   border-top-right-radius: 100px;
+}
+
+#logout {
+  background-color: #9ccfd8;
+  background-image: image(url("/usr/share/wlogout/assets/logout.svg"));
+  border-bottom-left-radius: 100px;
+}
+
+#lock {
+  background-color: #c4a7e7;
+  background-image: image(url("/usr/share/wlogout/assets/lock.svg"));
   border-bottom-right-radius: 100px;
 }

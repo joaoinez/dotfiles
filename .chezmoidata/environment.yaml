@@ -8,7 +8,6 @@ environment:
     - "swaync"
     - "syshud"
     - "pamixer"
-    - "pavucontrol"
     - "xdg-desktop-portal-hyprland"
     - "xdg-desktop-portal-gtk"
     - "polkit-gnome"
@@ -25,3 +24,4 @@ environment:
     - "wlogout"
     - "gnome-calendar"
     - "gnome-weather"
+    - "wlsunset"

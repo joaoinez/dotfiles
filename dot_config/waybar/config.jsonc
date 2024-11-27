@@ -2,14 +2,28 @@
 {
   "layer": "top", // Waybar at top layer
   "spacing": 0, // Gaps between modules (0)
+  // "margin": "6px",
+  "margin-top": 6,
+  "margin-left": 8,
+  "margin-bottom": 0,
+  "margin-right": 8,
   "modules-left": [
     "custom/os",
+    "group/utilities",
     "hyprland/workspaces",
     "custom/divider",
     "hyprland/window",
   ],
-  "modules-center": ["custom/weather", "clock", "custom/media"],
+  "modules-center": [
+    "custom/weather",
+    "clock",
+    "group/media",
+    "custom/divider",
+    "custom/media-track",
+  ],
+
   "modules-right": [
+    "custom/backlight",
     "tray",
     "wireplumber",
     "network",
@@ -21,22 +35,31 @@
     "on-click": "kitty --title Kitty --hold sh -c 'fastfetch'",
     "tooltip": false,
   },
+  "group/utilities": {
+    "orientation": "inherit",
+    "modules": ["custom/launcher", "custom/resources"],
+  },
+  "custom/launcher": {
+    "format": "󰘳",
+    "on-click": "rofi -show drun",
+    "tooltip": false,
+  },
+  "custom/resources": {
+    "format": "󰨇",
+    "on-click": "resources",
+    "tooltip": false,
+  },
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>",
   },
   "custom/divider": {
     "format": "󰜥",
+    "tooltip": false,
   },
   "hyprland/window": {
     "format": "{}",
-    "max-length": 50,
+    "max-length": 40,
     "separate-outputs": true,
-    "rewrite": {
-      "(.*) — Mozilla Firefox": "Firefox 󰈹",
-      "(.*) — Zen Browser": "Zen 󰈹",
-      "Kitty": "Kitty ",
-      "(.*)Discord(.*)": "Discord ",
-    },
   },
   "custom/weather": {
     "exec": "~/.config/waybar/scripts/get_weather.sh Rotterdam+Netherlands",
@@ -65,13 +88,47 @@
       },
     },
   },
-  "custom/media": {
+  "group/media": {
+    "orientation": "inherit",
+    "modules": [
+      "custom/media-previous",
+      "custom/media-playpause",
+      "custom/media-next",
+    ],
+  },
+  "custom/media-previous": {
+    "format": "󰒮",
+    "on-click": "playerctl previous",
+    "tooltip": false,
+  },
+  "custom/media-playpause": {
+    "format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "exec": "~/.config/waybar/scripts/mediaplaypause.py 2> /dev/null",
+    "tooltip": false,
+  },
+  "custom/media-next": {
+    "format": "󰒭",
+    "on-click": "playerctl next",
+    "tooltip": false,
+  },
+  "custom/media-track": {
     "format": "{}",
     "escape": true,
     "return-type": "json",
     "max-length": 40,
+    // "interval": 30,
     "on-click": "playerctl play-pause",
     "exec": "~/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+    // "exec-if": "pgrep spotify",
+  },
+  "custom/backlight": {
+    "interval": 1,
+    "on-click": "pgrep wlsunset >/dev/null && pkill wlsunset || wlsunset -l 51.9 -L 4.5",
+    "exec": "pgrep wlsunset >/dev/null && echo 󰖨 || echo ",
+    "tooltip": false,
   },
   "tray": {
     "spacing": 10,
@@ -79,7 +136,7 @@
   "wireplumber": {
     "format": "{volume} {icon}",
     "format-muted": "",
-    "on-click": "pavucontrol",
+    "on-click": "easyeffects",
     "format-icons": ["", "", ""],
   },
   "network": {
