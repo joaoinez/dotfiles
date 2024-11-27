@@ -29,7 +29,7 @@ tooltip label {
 #custom-os {
   background-color: @text;
   color: @base;
-  padding: 0.25em 0.69em;
+  padding: 0.25em 0.7em;
   margin: 0.5em 0;
   margin-left: 1em;
   border-radius: 50%;
@@ -135,8 +135,8 @@ window#waybar.empty #window {
 
 #custom-backlight {
   background-color: @gold;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
+  padding-left: 0.45em;
+  padding-right: 0.45em;
   margin: 0.75em 0;
   border-radius: 50%;
   color: @base;
@@ -184,7 +184,7 @@ window#waybar.empty #window {
 
 #custom-wlogout {
   background-color: @surface;
-  padding: 0.25em 0.69em;
+  padding: 0.25em 0.7em;
   margin: 0.5em 0;
   margin-right: 1em;
   border-radius: 50%;

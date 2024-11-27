@@ -111,6 +111,9 @@ alias sourcez="source ~/.zshrc"
 alias yay="paru"
 alias clearcache="paru -Sccd"
 
+# Fastfetch
+alias neofetch="fastfetch"
+
 # █▀▀ █░█ ▄▀█ █░░
 # ██▄ ▀▄▀ █▀█ █▄▄
 if [[ -f "/opt/homebrew/bin/brew" ]] then

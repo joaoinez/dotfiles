@@ -31,7 +31,7 @@
   ],
   "custom/os": {
     "format": "󰣇",
-    "on-click": "kitty --title Kitty --hold sh -c 'fastfetch'",
+    "on-click": "kitty --title 'Neofetch' --hold sh -c 'fastfetch'",
     "tooltip": false,
   },
   "group/utilities": {
