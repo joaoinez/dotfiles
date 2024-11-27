@@ -1,121 +1,62 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "color": {
-      "1": "blue",
-      "2": "green",
+    // "color": {
+    //   "1": "blue",
+    //   "2": "green",
+    // },
+    "source": "~/.config/fastfetch/logo.png",
+    "padding": {
+      "top": 1,
     },
+    // "width": 32,
+    // "height": 16,
   },
   "modules": [
+    "break",
     {
       "type": "custom",
-      "format": "┌────────────────────── Hardware ─────────────────────",
-      "outputColor": "green",
+      "format": "ArchSliver",
+      "outputColor": "red",
     },
+    "break",
+    "separator",
+    "break",
     {
-      "type": "title",
-      "key": " PC",
-      "keyColor": "magenta",
-    },
-    {
-      "type": "cpu",
-      "key": "│ ├󰍛 CPU",
-      "showPeCoreCount": true,
-      "format": "{1}",
-      "keyColor": "magenta",
-    },
-    {
-      "type": "gpu",
-      "key": "│ ├󰍛 GPU",
-      "keyColor": "magenta",
+      "type": "os",
+      "key": " ",
     },
     {
       "type": "memory",
-      "key": "│ ├󰍛 Memory",
-      "keyColor": "magenta",
-    },
-    {
-      "type": "swap",
-      "key": "│ ├󰍛 Swap",
-      "keyColor": "magenta",
-    },
-    {
-      "type": "disk",
-      "key": "└ └󰍛 Disk",
-      "keyColor": "magenta",
-    },
-    {
-      "type": "custom",
-      "format": "└─────────────────────────────────────────────────────",
-      "outputColor": "green",
-    },
-    {
-      "type": "custom",
-      "format": "┌────────────────────── Software ─────────────────────",
-      "outputColor": "blue",
-    },
-    {
-      "type": "os",
-      "key": " OS",
-      "keyColor": "yellow",
+      "key": " ",
     },
     {
       "type": "kernel",
-      "key": "│ ├ Kernel",
-      "keyColor": "yellow",
+      "key": " ",
     },
     {
       "type": "packages",
-      "key": "│ ├󰏖 Packages",
-      "keyColor": "yellow",
-    },
-    {
-      "type": "shell",
-      "key": "│ ├ Shell",
-      "keyColor": "yellow",
-    },
-    {
-      "type": "uptime",
-      "key": "└ └ Uptime",
-      "keyColor": "yellow",
-    },
-    "break",
-    {
-      "type": "de",
-      "key": " DE",
-      "keyColor": "cyan",
-    },
-    {
-      "type": "lm",
-      "key": "│ ├ LM",
-      "keyColor": "cyan",
+      "key": " ",
     },
     {
       "type": "wm",
-      "key": "│ ├ WM",
-      "keyColor": "cyan",
+      "key": " ",
     },
     {
-      "type": "gpu",
-      "key": "│ ├󰍛 GPU Driver",
-      "format": "{3}",
-      "keyColor": "cyan",
+      "type": "terminal",
+      "key": " ",
     },
-    {
-      "type": "theme",
-      "key": "└ └󰉼 Theme",
-      "keyColor": "cyan",
-    },
-
     {
       "type": "custom",
-      "format": "└────────────────────────────────────────────────────",
-      "outputColor": "blue",
+      "format": "github.com/joaoinez",
+      "outputColor": "white",
     },
     "break",
     {
       "type": "custom",
-      "format": "               \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m ",
+      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m",
     },
+    "break",
+    "separator",
   ],
 }

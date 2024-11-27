@@ -18,7 +18,6 @@
     "custom/weather",
     "clock",
     "group/media",
-    "custom/divider",
     "custom/media-track",
   ],
 
@@ -115,7 +114,7 @@
     "tooltip": false,
   },
   "custom/media-track": {
-    "format": "{}",
+    "format": "󰜥 {}",
     "escape": true,
     "return-type": "json",
     "max-length": 40,

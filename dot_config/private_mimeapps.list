@@ -22,3 +22,4 @@ application/xhtml+xml=zen-alpha.desktop;
 application/x-extension-xhtml=zen-alpha.desktop;
 application/x-extension-xht=zen-alpha.desktop;
 image/jpeg=org.gnome.eog.desktop;
+image/png=org.gnome.eog.desktop;
