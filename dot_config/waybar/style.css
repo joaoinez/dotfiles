@@ -65,6 +65,10 @@ tooltip label {
   color: @foam;
 }
 
+#workspaces button.urgent {
+  color: @gold;
+}
+
 #custom-divider {
   padding: 0.25em 0.75em;
   padding-right: 0;

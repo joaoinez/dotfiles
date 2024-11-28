@@ -79,3 +79,8 @@ gh auth login
 ```
 
 #### Initialize `neovim` and `tmux`
+
+<!-- see if you need dconf editor -->
+<!-- check if you need this file /etc/xdg/xdg-desktop-portal/hyprland-portals.conf -->
+<!-- [preferred] -->
+<!-- default=gtk;hyprland -->
