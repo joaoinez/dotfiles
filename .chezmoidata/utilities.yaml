@@ -18,5 +18,6 @@ utilities:
     - "gparted"
     - "protonup-qt"
     - "easyeffects"
+    - "wget"
     # - "fancontrol-gui"
     # - "openrgb"
