@@ -18,9 +18,11 @@
 2. Add `ipv6.disable=1` at the end of the `linux` line
 3. Save GRUB settings by pressing `Ctrl + x` -->
 
+#### Uncomment `ParallelDownloads = 5` and change it to `10` in `/etc/pacman.conf`
+
 #### Run `archinstall` `(minimal with linux-zen)` script
 
-#### Add `base-devel` and `git` as additional packages to be installed
+#### Add `base-devel`, `git`, `openssh` and `tar` as additional packages to be installed
 
 #### Reboot
 
@@ -84,3 +86,4 @@ gh auth login
 <!-- check if you need this file /etc/xdg/xdg-desktop-portal/hyprland-portals.conf -->
 <!-- [preferred] -->
 <!-- default=gtk;hyprland -->
+<!-- bash <(curl https://updates.zen-browser.app/appimage.sh) -->

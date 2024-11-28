@@ -15,6 +15,20 @@ sudo cp ~/.local/share/chezmoi/root/usr/share/sddm/themes/tokyo-night-sddm/theme
 
 sudo systemctl enable sddm.service &>/dev/null
 
-echo "Creating Projects directory"
+echo "Creating missing directories"
+
+mkdir -p ~/.themes/rose-pine-gtk
+
+mkdir -p ~/.icons/rose-pine-icons
+
+mkdir -p ~/Pictures/Wallpapers
 
 mkdir -p ~/Documents/Projects
+
+echo "Extracting theme and wallpapers"
+
+tar xf ~/.local/share/chezmoi/theme/theme.tar.gz --directory=/home/astherae/.themes/rose-pine-gtk
+
+tar xf ~/.local/share/chezmoi/theme/icons.tar.gz --directory=/home/astherae/.icons/rose-pine-icons
+
+tar xf ~/.local/share/chezmoi/theme/wallpapers.tar.gz --directory=/home/astherae/Pictures/Wallpapers

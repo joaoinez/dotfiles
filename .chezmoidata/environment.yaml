@@ -19,7 +19,7 @@ environment:
     - "rofi-wayland"
     - "cliphist"
     - "gvfs"
-    - "nautilus"
+    # - "nautilus"
     - "thunar"
     - "eog"
     - "wlogout"
