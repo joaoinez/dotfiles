@@ -86,4 +86,3 @@ gh auth login
 <!-- check if you need this file /etc/xdg/xdg-desktop-portal/hyprland-portals.conf -->
 <!-- [preferred] -->
 <!-- default=gtk;hyprland -->
-<!-- bash <(curl https://updates.zen-browser.app/appimage.sh) -->
