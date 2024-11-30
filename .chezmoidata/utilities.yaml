@@ -19,5 +19,6 @@ utilities:
     - "protonup-qt"
     - "easyeffects"
     - "wget"
+    - "downgrade"
     # - "fancontrol-gui"
     # - "openrgb"

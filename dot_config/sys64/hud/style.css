@@ -3,7 +3,7 @@
 }
 
 #syshud .box_layout {
-  background: alpha(#1f1d2e, 0.8);
+  background: alpha(#faf4ed, 0.8);
   border-radius: 25px;
   border: none;
   margin: 10px;
@@ -14,7 +14,7 @@
   padding: 0px;
 }
 #syshud label {
-  color: #908caa;
+  color: #575279;
   font-size: 14px;
 }
 
@@ -32,12 +32,14 @@
 #syshud scale.horizontal highlight {
   border-radius: 3px;
   min-height: 5px;
-  background: #e0def4;
+  background: #575279;
+  border: none;
   margin: 0px;
 }
 #syshud scale.horizontal slider {
   margin: 0px;
   background: transparent;
+  border: none;
   min-height: 5px;
   box-shadow: none;
   padding: 0px;
@@ -57,7 +59,7 @@
 #syshud scale.vertical highlight {
   border-radius: 3px;
   min-width: 5px;
-  background: #e0def4;
+  background: #575279;
   margin: 0px;
 }
 #syshud scale.vertical slider {
