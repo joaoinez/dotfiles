@@ -42,6 +42,10 @@ tooltip label {
   color: @text;
 }
 
+#custom-files {
+  margin-left: 1em;
+}
+
 #custom-resources {
   margin-left: 1em;
 }

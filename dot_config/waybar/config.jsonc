@@ -35,11 +35,16 @@
   },
   "group/utilities": {
     "orientation": "inherit",
-    "modules": ["custom/launcher", "custom/resources"],
+    "modules": ["custom/launcher", "custom/files", "custom/resources"],
   },
   "custom/launcher": {
     "format": "",
     "on-click": "rofi -show drun",
+    "tooltip": false,
+  },
+  "custom/files": {
+    "format": "",
+    "on-click": "thunar",
     "tooltip": false,
   },
   "custom/resources": {

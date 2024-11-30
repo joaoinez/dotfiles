@@ -3,7 +3,9 @@ set -euo pipefail
 
 echo "Applying sddm theme"
 
-sudo mkdir -p /etc/sddm.conf.d
+if [ ! -d /etc/sddm.conf.d ]; then
+  sudo mkdir -p /etc/sddm.conf.d
+fi
 
 sudo touch /etc/sddm.conf.d/theme.conf
 
@@ -17,13 +19,25 @@ sudo systemctl enable sddm.service &>/dev/null
 
 echo "Creating missing directories"
 
-mkdir -p ~/.themes/rose-pine-gtk
+if [ ! -d ~/.themes/rose-pine-gtk ]; then
+  mkdir -p ~/.themes/rose-pine-gtk
+fi
 
-mkdir -p ~/.icons/rose-pine-icons
+if [ ! -d ~/.icons/rose-pine-icons ]; then
+  mkdir -p ~/.icons/rose-pine-icons
+fi
 
-mkdir -p ~/Pictures/Wallpapers
+if [ ! -d ~/Pictures/Wallpapers ]; then
+  mkdir -p ~/Pictures/Wallpapers
+fi
 
-mkdir -p ~/Documents/Projects
+if [ ! -d ~/Pictures/Screenshots ]; then
+  mkdir -p ~/Pictures/Screenshots
+fi
+
+if [ ! -d ~/Documents/Projects ]; then
+  mkdir -p ~/Documents/Projects
+fi
 
 echo "Extracting theme and wallpapers"
 
@@ -32,3 +46,9 @@ tar xf ~/.local/share/chezmoi/theme/theme.tar.gz --directory=/home/astherae/.the
 tar xf ~/.local/share/chezmoi/theme/icons.tar.gz --directory=/home/astherae/.icons/rose-pine-icons
 
 tar xf ~/.local/share/chezmoi/theme/wallpapers.tar.gz --directory=/home/astherae/Pictures/Wallpapers
+
+echo "Downloading yazi theme"
+
+if [ "$(ya pack -l | grep catppuccin | tr -d '[:space:]')" != "yazi-rs/flavors:catppuccin-mocha" ]; then
+  ya pack -a yazi-rs/flavors:catppuccin-mocha
+fi
