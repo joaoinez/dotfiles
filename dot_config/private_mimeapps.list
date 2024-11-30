@@ -9,6 +9,8 @@ application/x-extension-shtml=zen-alpha.desktop
 application/xhtml+xml=zen-alpha.desktop
 application/x-extension-xhtml=zen-alpha.desktop
 application/x-extension-xht=zen-alpha.desktop
+image/jpeg=org.gnome.eog.desktop;
+image/png=org.gnome.eog.desktop;
 
 [Added Associations]
 x-scheme-handler/http=zen-alpha.desktop;

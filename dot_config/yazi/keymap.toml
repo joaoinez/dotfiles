@@ -1,0 +1,31 @@
+[[manager.prepend_keymap]]
+on   = "T"
+run  = "plugin --sync max-preview"
+# For upcoming Yazi 0.4 (nightly version):
+# run  = "plugin max-preview"
+desc = "Maximize or restore preview"
+
+[[manager.prepend_keymap]]
+on   = "l"
+run  = "plugin --sync smart-enter"
+# For upcoming Yazi 0.4 (nightly version):
+# run  = "plugin smart-enter"
+desc = "Enter the child directory, or open the file"
+
+[[manager.prepend_keymap]]
+on  = "<C-n>"
+run = '''
+	shell 'dragon-drop -x -i -T -s 300 "$1"' --confirm
+'''
+
+[[manager.prepend_keymap]]
+on  = "<C-A-n>"
+run = '''
+	shell 'GDK_BACKEND=x11 dragon-drop -i -T -s 300 "$1"' --confirm
+'''
+
+[[manager.prepend_keymap]]
+on  = "y"
+run = [ '''
+	shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm
+''', "yank" ]

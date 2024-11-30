@@ -20,5 +20,6 @@ utilities:
     - "easyeffects"
     - "wget"
     - "downgrade"
+    - "dragon-drop"
     # - "fancontrol-gui"
     # - "openrgb"

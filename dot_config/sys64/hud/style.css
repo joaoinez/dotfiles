@@ -3,9 +3,9 @@
 }
 
 #syshud .box_layout {
-  background: alpha(#faf4ed, 0.8);
+  background: alpha(#1f1d2e, 0.75);
   border-radius: 25px;
-  border: none;
+  border: 1px solid @borders;
   margin: 10px;
 }
 
@@ -14,8 +14,7 @@
   padding: 0px;
 }
 #syshud label {
-  color: #575279;
-  font-size: 14px;
+  color: alpha(@theme_fg_color, 0.5);
 }
 
 /* Horizontal layout */
@@ -32,7 +31,7 @@
 #syshud scale.horizontal highlight {
   border-radius: 3px;
   min-height: 5px;
-  background: #575279;
+  background: alpha(@theme_fg_color, 0.75);
   border: none;
   margin: 0px;
 }
@@ -59,12 +58,14 @@
 #syshud scale.vertical highlight {
   border-radius: 3px;
   min-width: 5px;
-  background: #575279;
+  background: alpha(@theme_fg_color, 0.75);
+  border: none;
   margin: 0px;
 }
 #syshud scale.vertical slider {
   margin: 0px;
   background: transparent;
+  border: none;
   min-width: 5px;
   box-shadow: none;
   padding: 0px;
