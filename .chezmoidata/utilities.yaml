@@ -21,5 +21,8 @@ utilities:
     - "wget"
     - "downgrade"
     - "dragon-drop"
+    - "iniparser"
+    - "autoconf-archive" # might have to downgrade this to build cava
+    - "cava-git"
     # - "fancontrol-gui"
     # - "openrgb"
