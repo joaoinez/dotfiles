@@ -31,8 +31,8 @@ run = [ '''
 ''', "yank" ]
 
 [[manager.prepend_keymap]]
-on  = ["e", "t"]
-run = '''
+on   = ["e", "t"]
+run  = '''
 	shell 'gio trash --empty' --confirm
 '''
 desc = "Empty the trash"
