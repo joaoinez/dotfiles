@@ -29,3 +29,10 @@ on  = "y"
 run = [ '''
 	shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm
 ''', "yank" ]
+
+[[manager.prepend_keymap]]
+on  = ["e", "t"]
+run = '''
+	shell 'gio trash --empty' --confirm
+'''
+desc = "Empty the trash"
