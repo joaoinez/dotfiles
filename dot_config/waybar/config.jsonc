@@ -40,17 +40,17 @@
   "custom/launcher": {
     "format": "",
     "on-click": "rofi -show drun",
-    "tooltip": false,
+    "tooltip-format": "Launcher",
   },
   "custom/files": {
     "format": "",
     "on-click": "thunar",
-    "tooltip": false,
+    "tooltip-format": "File Manager",
   },
   "custom/resources": {
     "format": "󰣔",
     "on-click": "resources",
-    "tooltip": false,
+    "tooltip-format": "System Resources",
   },
   "hyprland/workspaces": {
     "format": "<sub>{icon}</sub>",
