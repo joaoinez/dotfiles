@@ -110,7 +110,7 @@
     "format": "{}",
     "escape": true,
     "return-type": "json",
-    "on-click": "playerctl play-pause",
+    "on-click": "playerctl -p spotify play-pause",
     "exec": "~/.config/waybar/scripts/mediaplaypause.py 2> /dev/null",
     "tooltip": false,
   },
@@ -124,10 +124,9 @@
     "escape": true,
     "return-type": "json",
     "max-length": 40,
-    // "interval": 30,
-    "on-click": "playerctl play-pause",
-    "exec": "~/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
-    // "exec-if": "pgrep spotify",
+    "on-click": "playerctl -p spotify play-pause",
+    "exec": "~/.config/waybar/scripts/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
+    "exec-if": "pgrep spotify",
   },
   "custom/backlight": {
     "interval": 1,
