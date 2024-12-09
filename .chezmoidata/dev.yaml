@@ -3,6 +3,7 @@ dev:
     - "nvm"
     - "go"
     - "github-cli"
+    - "hub"
     - "kitty"
     - "neovim"
     - "tmux"
