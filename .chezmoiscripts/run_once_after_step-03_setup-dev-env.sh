@@ -4,7 +4,7 @@ set -euo pipefail
 if [ ! -d ~/.config/nvim ]; then
   echo "Cloning neovim config"
 
-  git clone https://github.com/joaoinez/nvim.git ~/.config/nvim
+  git clone https://github.com/joaoinez/slivers.nvim.git ~/.config/nvim
 fi
 
 if [ ! -d ~/.config/lazyvim ]; then
