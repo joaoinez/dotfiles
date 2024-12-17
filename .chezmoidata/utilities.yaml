@@ -24,5 +24,6 @@ utilities:
     - "iniparser"
     - "autoconf-archive" # might have to downgrade this to build cava
     - "cava-git"
+    - "wordgrinder"
     # - "fancontrol-gui"
     # - "openrgb"

@@ -12,4 +12,4 @@ dev:
     # - "docker"
     # - "docker-compose"
     # - "nvidia-container-toolkit"
-    # - "ollama-cuda"
+    - "ollama-cuda"
