@@ -6,6 +6,7 @@ dev:
     - "hub"
     - "kitty"
     - "neovim"
+    - "helix"
     - "tmux"
     - "lazygit"
     - "bruno-bin"

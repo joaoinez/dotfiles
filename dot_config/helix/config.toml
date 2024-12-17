@@ -1,0 +1,13 @@
+theme = "catppuccin_trans"
+
+[editor]
+line-number = "relative"
+mouse = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
