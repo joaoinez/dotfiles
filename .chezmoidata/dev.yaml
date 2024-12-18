@@ -1,5 +1,6 @@
 dev:
   packages:
+    - "luarocks"
     - "nvm"
     - "go"
     - "github-cli"

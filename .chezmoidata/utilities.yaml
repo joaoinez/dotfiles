@@ -25,5 +25,7 @@ utilities:
     - "autoconf-archive" # might have to downgrade this to build cava
     - "cava-git"
     - "wordgrinder"
+    - "git-delta"
+    - "chafa"
     # - "fancontrol-gui"
     # - "openrgb"

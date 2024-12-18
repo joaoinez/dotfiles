@@ -9,6 +9,10 @@ echo "Enabling pacman colors"
 
 sudo sed -i 's/#Color/Color/' /etc/pacman.conf
 
+echo "Enabling cache timer"
+
+sudo systemctl enable paccache.timer
+
 echo "Applying NVIDIA configs"
 
 sudo sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
@@ -32,4 +36,3 @@ sudo cp /etc/default/grub /etc/default/grub.bak
 sudo cp ~/.local/share/chezmoi/root/etc/default/grub /etc/default/grub
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
-
