@@ -85,6 +85,9 @@ alias cat="bat"
 alias vim='nvim'
 alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
 
+# Helix
+alias hx='helix'
+
 # Zinit
 alias zstatus='zinit zstatus'
 
@@ -108,7 +111,7 @@ alias sourcez="source ~/.zshrc"
 
 # AUR
 alias yay="paru"
-alias clearcache="paru -Sccd"
+alias cleancache="paru -Sccd"
 
 # Fastfetch
 alias neofetch="fastfetch"
