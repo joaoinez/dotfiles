@@ -11,6 +11,7 @@ utilities:
     - "fzf"
     - "tealdeer"
     - "fastfetch"
+    - "onefetch"
     - "unzip"
     - "mpv"
     - "imagemagick"
