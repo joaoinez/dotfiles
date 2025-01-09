@@ -1,7 +1,7 @@
 apps:
   packages:
     - "firefox"
-    - "zen-browser-avx2-bin"
+    - "zen-browser-bin"
     - "vesktop"
     - "steam"
     - "gnome-calculator"
