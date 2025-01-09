@@ -1,7 +1,6 @@
 environment:
   packages:
     - "hyprland"
-    # - "hyprland-qtutils-git"
     - "cpio"
     - "cmake"
     - "sddm"
