@@ -16,3 +16,4 @@ dev:
     # - "docker-compose"
     # - "nvidia-container-toolkit"
     - "ollama-cuda"
+    - "oterm"
