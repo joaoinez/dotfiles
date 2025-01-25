@@ -17,3 +17,5 @@ dev:
     # - "nvidia-container-toolkit"
     - "ollama-cuda"
     - "oterm"
+    - "mockoon-bin"
+    - 'visual-studio-code-bin'
