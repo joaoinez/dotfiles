@@ -82,6 +82,8 @@ gh auth login
 
 #### Initialize `neovim` and `tmux`
 
+`bat cache --build`
+
 <!-- see if you need dconf editor -->
 <!-- check if you need this file /etc/xdg/xdg-desktop-portal/hyprland-portals.conf -->
 <!-- [preferred] -->
