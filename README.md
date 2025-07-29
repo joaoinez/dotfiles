@@ -18,7 +18,7 @@
 2. Add `ipv6.disable=1` at the end of the `linux` line
 3. Save GRUB settings by pressing `Ctrl + x` -->
 
-#### Uncomment `ParallelDownloads = 5` and change it to `10` in `/etc/pacman.conf`
+#### Change `ParallelDownloads = 5` to `10` in `/etc/pacman.conf`
 
 #### Run `archinstall` `(minimal with linux-zen)` script
 
