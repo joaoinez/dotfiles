@@ -9,9 +9,9 @@
   "modules-left": [
     "custom/os",
     "group/utilities",
-    "hyprland/workspaces",
+    "niri/workspaces",
     "custom/divider",
-    "hyprland/window",
+    "niri/window",
   ],
   "modules-center": [
     "custom/weather",
@@ -19,7 +19,6 @@
     "group/media",
     "custom/media-track",
   ],
-
   "modules-right": [
     "custom/backlight",
     "tray",
@@ -35,7 +34,11 @@
   },
   "group/utilities": {
     "orientation": "inherit",
-    "modules": ["custom/launcher", "custom/files", "custom/resources"],
+    "modules": [
+      "custom/launcher",
+      "custom/files",
+      "custom/resources"
+    ],
   },
   "custom/launcher": {
     "format": "",
@@ -52,7 +55,7 @@
     "on-click": "resources",
     "tooltip-format": "System Resources",
   },
-  "hyprland/workspaces": {
+  "niri/workspaces": {
     "format": "<sub>{icon}</sub>",
     "on-click": "activate",
     "sort-by-number": true,
@@ -61,7 +64,7 @@
     "format": "󰜥",
     "tooltip": false,
   },
-  "hyprland/window": {
+  "niri/window": {
     "format": "{}",
     "max-length": 40,
     "separate-outputs": true,
@@ -141,7 +144,11 @@
     "format": "{volume} {icon}",
     "format-muted": "",
     "on-click": "easyeffects",
-    "format-icons": ["", "", ""],
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
   },
   "network": {
     "format": "{ifname}",
@@ -157,7 +164,10 @@
   },
   "group/notifs": {
     "orientation": "inherit",
-    "modules": ["custom/swaync", "custom/updates"],
+    "modules": [
+      "custom/swaync",
+      "custom/updates"
+    ],
   },
   "custom/swaync": {
     "tooltip": false,

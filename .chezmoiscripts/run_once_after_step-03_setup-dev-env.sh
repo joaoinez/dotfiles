@@ -7,16 +7,8 @@ if [ ! -d ~/.config/nvim ]; then
   git clone https://github.com/joaoinez/slivers.nvim.git ~/.config/nvim
 fi
 
-if [ ! -d ~/.config/lazyvim ]; then
-  echo "Cloning lazyvim config"
-
-  git clone https://github.com/joaoinez/lazyvim.git ~/.config/lazyvim
-fi
-
 if [ ! -d ~/.tmux/plugins/tpm ]; then
   echo "Cloning TPM"
 
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
-
-sudo systemctl enable ollama.service &>/dev/null

@@ -1,24 +1,31 @@
 environment:
   packages:
-    - "hyprland"
+    # Portals
+    - "xdg-desktop-portal-gtk"
+    - "xdg-desktop-portal-gnome"
+    - "gnome-keyring"
+
+    # Window Manager
+    - "niri-git"
+
+    - "xwayland-satellite-git"
     - "cpio"
     - "cmake"
     - "sddm"
     - "libnotify"
     - "swaync"
     - "syshud"
-    - "pamixer"
-    - "xdg-desktop-portal-hyprland"
-    - "xdg-desktop-portal-gtk"
+    # - "pamixer"
     - "polkit-gnome"
     - "qt5-wayland"
     - "qt6-wayland"
     - "python-gobject"
     - "waybar"
     - "swww"
-    - "rofi-wayland"
+    - "fuzzel"
     - "cliphist"
-    - "gvfs"
+    - "nautilus"
+    - "gvfs" # Dependency for thunar
     - "thunar"
     - "ffmpegthumbnailer"
     - "p7zip"
@@ -29,5 +36,4 @@ environment:
     - "gnome-calendar"
     - "gnome-weather"
     - "wlsunset"
-    - "hyprpicker"
-    - "grimblast-git"
+    # - "grimblast-git"

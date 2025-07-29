@@ -9,10 +9,11 @@
 # █░█ ▄▀█ █▀█ █ ▄▀█ █▄▄ █░░ █▀▀ █▀
 # ▀▄▀ █▀█ █▀▄ █ █▀█ █▄█ █▄▄ ██▄ ▄█
 export MYSCRIPTS="$HOME/.local/bin"
-export MYVIMRC="$HOME/.config/nvim"
-export EDITOR="nvim"
-export MANPAGER="nvim +Man!"
+export MYVIMRC="$HOME/.config/nvim/init.lua"
 export BAT_THEME="Catppuccin Mocha"
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # ▀█ █ █▄░█ █ ▀█▀
 # █▄ █ █░▀█ █ ░█░
@@ -27,16 +28,15 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # █▀█ █░░ █░█ █▀▀ █ █▄░█ █▀
 # █▀▀ █▄▄ █▄█ █▄█ █ █░▀█ ▄█
+zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
 
 # █▀ █▄░█ █ █▀█ █▀█ █▀▀ ▀█▀ █▀
 # ▄█ █░▀█ █ █▀▀ █▀▀ ██▄ ░█░ ▄█
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
 
 # █▀▀ █▀█ █▀▄▀█ █▀█ █░░ █▀▀ ▀█▀ █ █▀█ █▄░█
@@ -55,6 +55,11 @@ bindkey -e
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 bindkey '^[w' kill-region
+# bindkey '	' autosuggest-accept
+
+# <Ctrl-x><Ctrl-e> to edit command-line in EDITOR
+autoload -Uz edit-command-line && zle -N edit-command-line && \
+  bindkey '^x^e' edit-command-line
 
 # █░█ █ █▀ ▀█▀ █▀█ █▀█ █▄█
 # █▀█ █ ▄█ ░█░ █▄█ █▀▄ ░█░
@@ -79,14 +84,11 @@ alias cclear="clear && printf '\e[3J'"
 alias ls='ls --color'
 alias ll="eza -lah --git --icons=always"
 alias tree="eza -T -L=2"
-alias cat="bat"
+alias cat="bat --paging=never"
 
 # Neovim
-alias vim='nvim'
-alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
-
-# Helix
-alias hx='helix'
+alias vim='~/.local/bin/slivers-nvim.sh'
+alias neovim='nvim --clean'
 
 # Zinit
 alias zstatus='zinit zstatus'
@@ -107,15 +109,12 @@ alias .verify="chezmoi verify"
 alias .push="sh ~/.local/bin/push_dotfiles.sh"
 
 # Source .zshrc
-alias sourcez="source ~/.zshrc"
-
-# AUR
-alias yay="paru"
-alias cleancache="paru -Sccd"
+alias source-zsh="source ~/.zshrc && source ~/.zshenv"
 
 # Fastfetch
 alias neofetch="fastfetch"
 
+# Yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -125,15 +124,24 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# git
+alias gfp="git fetch && git pull"
+
+# parrot
+alias parrot="curl parrot.live"
+
+# act
+alias act="act --container-architecture linux/amd64"
+
 # █▀▀ █░█ ▄▀█ █░░
 # ██▄ ▀▄▀ █▀█ █▄▄
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # █▀▀ ▀█ █▀▀
 # █▀░ █▄ █▀░
-
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,spinner:#f5e0dc,hl:#f38ba8 \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
@@ -173,7 +181,3 @@ _fzf_comprun() {
 }
 
 source ~/.local/bin/fzf-git.sh
-
-# █▄░█ █░█ █▀▄▀█
-# █░▀█ ▀▄▀ █░▀░█
-source /usr/share/nvm/init-nvm.sh
