@@ -117,6 +117,10 @@ alias source-zsh="source ~/.zshrc && source ~/.zshenv"
 # Fastfetch
 alias neofetch="fastfetch"
 
+# AUR
+alias yay="paru"
+alias cleancache="paru -Sccd"
+
 # Yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
