@@ -17,9 +17,10 @@ echo "Applying NVIDIA configs"
 
 sudo sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
 
-sudo touch /etc/modprobe.d/nvidia.conf
-
-sudo bash -c 'echo "options nvidia-drm modeset=1 fbdev=1" >> /etc/modprobe.d/nvidia.conf'
+if [ ! -f /etc/modprobe.d/nvidia.conf ]; then
+  sudo touch /etc/modprobe.d/nvidia.conf
+  sudo bash -c 'echo "options nvidia-drm modeset=1" >> /etc/modprobe.d/nvidia.conf'
+fi
 
 sudo mkinitcpio -P
 

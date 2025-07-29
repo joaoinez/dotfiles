@@ -71,7 +71,7 @@ chezmoi diff
 #### Install `node`
 
 ```shell
-nvm install node
+fnm install --latest
 ```
 
 #### Sign in to github
