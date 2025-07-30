@@ -47,6 +47,27 @@ tar xf ~/.local/share/chezmoi/theme/icons.tar.gz --directory=/home/astherae/.ico
 
 tar xf ~/.local/share/chezmoi/theme/wallpapers.tar.gz --directory=/home/astherae/Pictures/Wallpapers
 
+echo "Applying GTK theme"
+
+gsettings set org.gnome.desktop.interface gtk-theme 'rose-pine-gtk'
+gsettings set org.gnome.desktop.interface icon-theme 'rose-pine-icons'
+gsettings set org.gnome.desktop.interface font-name 'Noto Sans 11'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+# gsettings set org.gnome.desktop.interface cursor-theme 'BreezeX-RosePineDawn-Linux' &
+
+echo "Enabling autostart service"
+
+sudo cp ~/.local/share/chezmoi/root/etc/systemd/system/autostart.service /etc/systemd/system/autostart.service
+
+systemctl --user daemon-reload
+systemctl --user enable autostart-script.service &>/dev/null
+
+# echo "Changing docker images location"
+#
+# sudo mkdir -p /etc/docker
+# sudo touch /etc/docker/daemon.json
+# sudo cp ~/.local/share/chezmoi/etc/docker/daemon.json /etc/docker/daemon.json
+
 # echo "Downloading yazi plugins"
 #
 # ya pkg install

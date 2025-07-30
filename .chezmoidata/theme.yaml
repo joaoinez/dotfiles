@@ -3,7 +3,7 @@ theme:
     - "nwg-look"
     - "qt5ct"
     - "qt6ct"
-    - "rose-pine-cursor"
+    # - "rose-pine-cursor"
     - "sddm-theme-tokyo-night-git"
     - "noto-fonts"
     - "noto-fonts-cjk"
