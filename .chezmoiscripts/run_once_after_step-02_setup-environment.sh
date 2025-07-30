@@ -47,6 +47,6 @@ tar xf ~/.local/share/chezmoi/theme/icons.tar.gz --directory=/home/astherae/.ico
 
 tar xf ~/.local/share/chezmoi/theme/wallpapers.tar.gz --directory=/home/astherae/Pictures/Wallpapers
 
-echo "Downloading yazi plugins"
-
-ya pkg -i
+# echo "Downloading yazi plugins"
+#
+# ya pkg install
