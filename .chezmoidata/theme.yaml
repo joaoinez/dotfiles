@@ -10,6 +10,6 @@ theme:
     - "noto-fonts-cjk"
     - "noto-fonts-emoji"
     - "noto-fonts-extra"
-    - "ttf-hack-nerd"
+    - "ttc-iosevka"
     - "ttf-noto-nerd"
     - "starship"
