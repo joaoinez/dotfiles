@@ -23,9 +23,8 @@ utilities:
     - "downgrade"
     - "dragon-drop"
     - "iniparser"
-    - "autoconf-archive" # might have to downgrade this to build cava
-    - "cava-git"
-    - "wordgrinder"
+    # - "autoconf-archive" # might have to downgrade this to build cava autoconf-archive-1:2023.02.20-2
+    # - "cava-git"
     - "git-delta"
     - "chafa"
     # - "fancontrol-gui"
