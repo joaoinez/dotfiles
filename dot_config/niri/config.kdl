@@ -12,6 +12,8 @@ input {
 
     mouse {
     }
+
+    focus-follows-mouse max-scroll-amount="0%"
 }
 
 output "HDMI-A-1" {
@@ -49,7 +51,7 @@ layout {
 
 spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "swww daemon"
+spawn-at-startup "swww-daemon"
 spawn-at-startup "wl-paste --type text --watch cliphist store"
 spawn-at-startup "wl-paste --type image --watch cliphist store"
 spawn-at-startup "sleep 1 && ~/.local/bin/change_wallpaper.sh ~/Pictures/Wallpapers"
