@@ -1,7 +1,8 @@
 apps:
   packages:
     - "zen-browser-bin"
-    # - "vesktop"
+    - "electron37-bin"
+    - "vesktop-bin"
     - "gnome-calculator"
     # - "spotify" # might have to run gpg --recv-keys 6224F9941A8AA6D1
     # - "google-chrome"

@@ -9,6 +9,7 @@ theme:
     - "noto-fonts-cjk"
     - "noto-fonts-emoji"
     - "noto-fonts-extra"
-    - "ttf-iosevka-nerd"
+    - "ttc-iosevka"
     - "ttf-noto-nerd"
+    - "ttf-roboto-mono-nerd"
     - "starship"

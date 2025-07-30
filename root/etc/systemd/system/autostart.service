@@ -1,0 +1,9 @@
+[Unit]
+Description=Auto start service
+
+[Service]
+Type=simple
+ExecStart=/home/astherae/.local/bin/autostart.sh
+
+[Install]
+WantedBy=default.target
