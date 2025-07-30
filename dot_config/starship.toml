@@ -3,13 +3,18 @@ $os\
 $directory\
 $git_branch\
 $git_status\
+$git_state\
+$nodejs\
+$lua\
+$python\
+$golang\
 \n$character"""
 
 add_newline = false
 palette = "catppuccin_mocha"
 
 [os]
-format = "[$symbol]($style)"
+format = " [$symbol]($style)"
 style = "blue"
 disabled = false
 
@@ -27,18 +32,37 @@ format = "[ $branch ]($style)"
 style = "peach"
 
 [git_status]
-format = "$ahead_behind$conflicted$staged$deleted$renamed$modified$typechanged$untracked"
+format = "$ahead_behind$stashed$conflicted$staged$deleted$renamed$modified$typechanged$untracked"
 up_to_date = "[ ](text)"
 ahead = "[ ](sapphire)"
 behind = "[ ](lavender)"
+stashed = "[󰜦 ](rosewater)"
 diverged = "[󰃻 ](maroon)"
 conflicted = "[ ](red)"
 staged = "[ ](green)"
 deleted = "[ ](yellow)"
 renamed = "[ ](yellow)"
-modified = "[ ](yellow)"
+modified = "[≡ ](yellow)"
 typechanged = "[ ](yellow)"
 untracked = "[ ](yellow)"
+
+[nodejs]
+symbol = ' '
+style = 'yellow bold'
+
+[lua]
+symbol = '󰢱 '
+
+[python]
+symbol = '󰌠 '
+style = "green bold"
+
+[golang]
+symbol = '󰟓 '
+
+[character]
+success_symbol = '[_](bold green)'
+error_symbol = '[_](bold red)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
@@ -67,3 +91,4 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
+
