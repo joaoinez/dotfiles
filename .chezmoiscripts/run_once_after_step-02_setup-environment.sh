@@ -49,4 +49,4 @@ tar xf ~/.local/share/chezmoi/theme/wallpapers.tar.gz --directory=/home/astherae
 
 echo "Downloading yazi plugins"
 
-ya pack -i
+ya pkg -i
