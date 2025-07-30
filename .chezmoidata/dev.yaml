@@ -6,6 +6,7 @@ dev:
     - "github-cli"
     - "hub"
     - "kitty"
+    - "tree-sitter-cli-git"
     - "neovim-nightly-bin"
     - "helix"
     - "tmux"
