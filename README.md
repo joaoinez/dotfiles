@@ -18,39 +18,21 @@
 2. Add `ipv6.disable=1` at the end of the `linux` line
 3. Save GRUB settings by pressing `Ctrl + x` -->
 
-#### Change `ParallelDownloads = 5` to `10` in `/etc/pacman.conf`
-
 #### Run `archinstall` `(minimal with linux-zen)` script
-
-#### Add `base-devel`, `git`, `openssh` and `tar` as additional packages to be installed
 
 #### Reboot
 
 ---
 
-### Build `paru`
+### Pre-install script
 
 ```shell
-git clone https://aur.archlinux.org/paru.git
-```
-
-```shell
-cd paru
-```
-
-```shell
-makepkg -si --noconfirm
+curl -fsSL joaoinez.me/arch | bash
 ```
 
 ---
 
 ### Chezmoi dotfiles
-
-#### Install `chezmoi`
-
-```shell
-paru -S chezmoi
-```
 
 #### Run `chezmoi`
 
@@ -68,23 +50,12 @@ chezmoi init --apply joaoinez
 chezmoi diff
 ```
 
-#### Install `node`
-
-```shell
-fnm install --latest
-```
-
 #### Sign in to github
 
 ```shell
 gh auth login
 ```
 
-#### Initialize `neovim` and `tmux`
+#### Initialize neovim
 
-`bat cache --build`
-
-<!-- see if you need dconf editor -->
-<!-- check if you need this file /etc/xdg/xdg-desktop-portal/hyprland-portals.conf -->
-<!-- [preferred] -->
-<!-- default=gtk;hyprland -->
+#### Initialize tmux
