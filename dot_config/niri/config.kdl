@@ -57,11 +57,11 @@ spawn-at-startup "syshud -p 'bottom-center' -i 24"
 spawn-at-startup "wlsunset -l 51.9 -L 4.5"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
-spawn-at-startup "gsettings set org.gnome.desktop.interface gtk-theme 'rose-pine-gtk'"
-spawn-at-startup "gsettings set org.gnome.desktop.interface icon-theme 'rose-pine-icons'"
-spawn-at-startup "gsettings set org.gnome.desktop.interface cursor-theme 'BreezeX-RosePineDawn-Linux'"
-spawn-at-startup "gsettings set org.gnome.desktop.interface font-name 'Noto Sans 11'"
-spawn-at-startup "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+// spawn-at-startup "gsettings set org.gnome.desktop.interface gtk-theme 'rose-pine-gtk'"
+// spawn-at-startup "gsettings set org.gnome.desktop.interface icon-theme 'rose-pine-icons'"
+// spawn-at-startup "gsettings set org.gnome.desktop.interface cursor-theme 'BreezeX-RosePineDawn-Linux'"
+// spawn-at-startup "gsettings set org.gnome.desktop.interface font-name 'Noto Sans 11'"
+// spawn-at-startup "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
 
 xwayland-satellite {
     path "xwayland-satellite"
@@ -70,8 +70,8 @@ xwayland-satellite {
 environment {
     DISPLAY ":0"
     QT_QPA_PLATFORM "wayland"
-    XCURSOR_THEME "BreezeX-RosePineDawn-Linux"
-    XCURSOR_SIZE "30"
+    // XCURSOR_THEME "BreezeX-RosePineDawn-Linux"
+    // XCURSOR_SIZE "30"
     LIBVA_DRIVER_NAME "nvidia"
     XDG_SESSION_TYPE "wayland"
     GBM_BACKEND "nvidia-drm"
@@ -82,8 +82,8 @@ environment {
 }
 
 cursor {
-    xcursor-theme "breeze_cursors"
-    xcursor-size 48
+    // xcursor-theme "breeze_cursors"
+    // xcursor-size 48
 
     hide-when-typing
     hide-after-inactive-ms 1000
