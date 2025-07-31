@@ -56,12 +56,6 @@ chezmoi diff
 gh auth login
 ```
 
-#### Install node
-
-```shell
-fnm install --latest
-```
-
 #### Initialize neovim
 
 #### Initialize tmux

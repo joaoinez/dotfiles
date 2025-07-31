@@ -59,8 +59,8 @@ echo "Creating autostart.service file"
 
 sudo cp ~/.local/share/chezmoi/root/etc/systemd/system/autostart.service /etc/systemd/system/autostart.service
 
-# systemctl --user daemon-reload &>/dev/null
-# systemctl --user enable autostart.service &>/dev/null
+sudo systemctl daemon-reload
+sudo systemctl enable autostart.service
 
 # echo "Changing docker images location"
 #
