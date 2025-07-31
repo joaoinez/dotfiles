@@ -8,4 +8,4 @@ Type=simple
 ExecStart=/home/astherae/.local/bin/autostart.sh
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target
