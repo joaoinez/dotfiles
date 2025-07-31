@@ -55,12 +55,12 @@ gsettings set org.gnome.desktop.interface font-name 'Noto Sans 11'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 # gsettings set org.gnome.desktop.interface cursor-theme 'BreezeX-RosePineDawn-Linux' &
 
-echo "Enabling autostart service"
+echo "Creating autostart.service file"
 
 sudo cp ~/.local/share/chezmoi/root/etc/systemd/system/autostart.service /etc/systemd/system/autostart.service
 
-systemctl --user daemon-reload &>/dev/null
-systemctl --user enable autostart.service &>/dev/null
+# systemctl --user daemon-reload &>/dev/null
+# systemctl --user enable autostart.service &>/dev/null
 
 # echo "Changing docker images location"
 #
