@@ -57,7 +57,7 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 echo "Creating autostart.service file"
 
-sudo cp ~/.local/share/chezmoi/root/etc/systemd/system/autostart.service /etc/systemd/system/autostart.service
+sudo cp ~/.local/share/chezmoi/root/etc/systemd/ser/autostart.service /etc/systemd/user/autostart.service
 
 systemctl --user daemon-reload
 systemctl --user add-wants niri.service autostart.service
