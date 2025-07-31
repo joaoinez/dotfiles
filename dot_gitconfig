@@ -3,7 +3,7 @@
   email = joaoinez.info@gmail.com
 [pull]
   rebase = true
-  [rebase]
+[rebase]
   autoStash = true
 [merge]
 	conflictstyle = zdiff3
