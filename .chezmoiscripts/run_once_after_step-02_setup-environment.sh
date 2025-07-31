@@ -39,6 +39,10 @@ if [ ! -d ~/Documents/Projects ]; then
   mkdir -p ~/Documents/Projects
 fi
 
+if [ ! -d ~/Downloads ]; then
+  mkdir -p ~/Downloads
+fi
+
 echo "Extracting theme and wallpapers"
 
 tar xf ~/.local/share/chezmoi/theme/theme.tar.gz --directory=/home/astherae/.themes/rose-pine-gtk
