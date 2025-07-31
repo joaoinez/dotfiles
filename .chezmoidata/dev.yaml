@@ -17,3 +17,4 @@ dev:
     - "nvidia-container-toolkit"
     - "mockoon-bin"
     - "visual-studio-code-bin"
+    - "opencode-bin"
