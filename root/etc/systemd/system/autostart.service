@@ -1,9 +1,9 @@
 [Unit]
 Description=Auto start service
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
 
 [Service]
-Type=simple
 ExecStart=/home/astherae/.local/bin/autostart.sh
-
-[Install]
-WantedBy=default.target
+Restart=on-failure

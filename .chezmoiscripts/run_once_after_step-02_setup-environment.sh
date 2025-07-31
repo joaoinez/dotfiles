@@ -59,8 +59,7 @@ echo "Creating autostart.service file"
 
 sudo cp ~/.local/share/chezmoi/root/etc/systemd/system/autostart.service /etc/systemd/system/autostart.service
 
-sudo systemctl daemon-reload
-sudo systemctl enable autostart.service
+systemctl --user add-wants niri.service autostart.service
 
 # echo "Changing docker images location"
 #
